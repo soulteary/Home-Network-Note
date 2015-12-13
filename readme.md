@@ -1,7 +1,10 @@
 ## 项目说明
 
-	家用娱乐环境。
+	记录搭建家用娱乐网络环境。
 
+### 目的
+
+- 满足高效备份数据/系统需求。
 - 满足切换设备无缝写码需求。
 - 满足切换设备无缝调试需求。
 - 构建自己的发布流程。
@@ -13,24 +16,30 @@
 
 目前省钱(屌丝)方案中使用的设备:
 
-- 北京联通50M, 使用迅雷快鸟，叠加公网下行为10MB/s
+- 北京联通50M, 使用迅雷快鸟，叠加公网下行到10MB/s
 - MacBook Pro (2014年，i7 2.5GHz，16G内存，Retina)
 - HASEE Z7 (2015年，i7 2.6GHz，16G内存)
+- iPad Air2
 - 工控机N270, 945GM x2 (双网口x1, 单网口x1), D525 x1
 - NETGEAR WNDR4300 (全千兆，双频，双128MB)
 - WD MY CLOUD 3T (2014年红盘)
-- XiaoMi Route Mini
+- 硬盘若干
 
+### 设备历史记录:
 
-历史省钱(屌丝)方案中的设备:
-
-- 杭州电信100M
-- Lenovo Y485 (2012年，U换A10，添双SSD，16G内存)
+- [HASEE Z7](./devices/HASEE-Z78172R2.md)
+- [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
+- [NETGEAR WNDR2000 300M](./devices/NetGear-WNR2000.md)
+- [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
+- [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
+- [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
 - MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
-- NETGEAR WNDR4300 (全千兆，双频，双128MB)
-- WD MY CLOUD 3T (2014年红盘)
-- TL-MR12U
 - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
+
+2014-12-01
+- Lenovo Y485 (2012年，U换A10，添双SSD，16G内存)
+
+- WD MY CLOUD 3T (2014年红盘)
 - 几台可联网的娱乐设备
 
 ## 需求分析
