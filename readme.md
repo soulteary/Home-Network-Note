@@ -52,6 +52,8 @@
 - 2016年04月 [WD My Cloud 4T](./devices/WD-My-Cloud-4T.md)
 - 2014年12月 [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
 - 2015年02月 [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md)
+- 2015年01月 [Kubi iwork7](./devices/KB-iwork7.md)
+- 2015年01月 [Kubi iwork8](./devices/KB-iwork8.md)
 - 2013年8月 [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
 - 2013年 MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
 - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
