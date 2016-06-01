@@ -50,11 +50,12 @@
 - [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
 - [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
 - [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
-- [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md)
-- [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
+- [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md) 2015年
+- [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md) 2013年
 - MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
 - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
-- [Lenovo Y485](./devices/Lenovo-Y485.md) (2012年)
+- [Kindle Paper White 1st](./devices/Kindle-paper-white-1.md) 2013年
+- [Lenovo Y485](./devices/Lenovo-Y485.md) 2012年
 
 ## 需求分析
 
