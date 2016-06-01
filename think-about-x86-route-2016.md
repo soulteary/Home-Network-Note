@@ -58,14 +58,14 @@ CPU选择倾向：`集成主板省事节能的ATOM或者奔腾，TDP 10W以内�
 
 结合CPU省事节能原则，可选主板列表和价格参考：
 
-|型号|大概价格|
-|---|---|
-|翔升J2900M-HK|439|
-|翔升N3150M-HK|338|
-|华擎Q2900M|579|
-|华擎IMB-154/155|无参考价格|
-|铭瑄MS-N3150|459|
-|华擎N3700|645|
+|型号|官方链接|大概价格|接口亮点|
+|---|---|---|---|
+|翔升J2900M-HK|[LINK](http://www.pcasl.com/index.php?act=pShow&id=204)|439|PCI-E接口尺寸好|
+|翔升N3150M-HK|[LINK](http://www.pcasl.com/index.php?act=pShow&id=215)|338|PCI-E接口尺寸好|
+|华擎Q2900M|[LINK](http://www.asrock.cn/mb/Intel/Q2900M/index.cn.asp)|579|PCI-E/USB接口数量多|
+|华擎IMB-154/155|[LINK](http://www.asrock.cn/ipc/overview.cn.asp?Model=IMB-154)|无参考价格|USB数量巨多|
+|铭瑄MS-N3150|[LINK](http://www.maxsun.com.cn/2015/0814/4162.html)|459|颜值不错,但自带网卡基本废柴|
+|华擎N3700|[LINK](http://www.asrock.com.tw/mb/Intel/N3700-ITX/index.tw.asp)|645|芯片最好|
 
 其中铭瑄主板颜值最高，但是可惜的是芯片却不是最新的，比较遗憾= =。
 
