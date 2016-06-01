@@ -45,16 +45,16 @@
 ### 使用过的设备历史记录（以网络设备为主/娱乐辅助为辅）:
 
 - 主机:
-    - [HASEE Z7](./devices/HASEE-Z78172R2.md)
+    - 2015年07月[HASEE Z7](./devices/HASEE-Z78172R2.md)
     - 2013年 MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
     - 2012年12月 [Lenovo Y485](./devices/Lenovo-Y485.md)
 - 路由器:
-    - [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
-    - [NETGEAR WNDR2000 300M](./devices/NetGear-WNR2000.md)
-    - [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
-    - [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
-    - 2013年01月 [TP-LINK WN703N](./devices/TP-LINK-WR703N.md)
+    - 2015年02月 [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
+    - 2014年11月 [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
+    - 2014年08月 [NETGEAR WNDR2000 300M](./devices/NetGear-WNR2000.md)
     - 2014年05月 [NETGEAR WN1000RP](./devices/NetGear-WN1000RP.md)
+    - 2013年06月 [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
+    - 2013年01月 [TP-LINK WN703N](./devices/TP-LINK-WR703N.md)
 - 储存:
     - 2016年04月 [WD My Cloud 4T](./devices/WD-My-Cloud-4T.md)
     - 2014年12月 [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
