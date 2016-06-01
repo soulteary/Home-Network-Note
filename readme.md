@@ -69,8 +69,8 @@
     - 2015年02月 [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md)
     - 2013年8月 [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
 - 显示器:
-    - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
-    - 2013年11月 [Dell U2312HM]()
+    - 2014年05月 [Dell U2412H组双屏](./devices/Dell-u2414h.md)
+    - 2013年11月 [Dell U2312HM](./devices/Dell-u2312hm.md)
 
 ## 需求分析
 
