@@ -42,7 +42,7 @@
 - 历史设备: (已断电)
     - 工控机 N270, 945GM x2 (双网口x1, 单网口x1), D525 x1, D425 x1
 
-### 设备历史记录:
+### 使用过的设备历史记录（以网络设备为主/娱乐辅助为辅）:
 
 - [HASEE Z7](./devices/HASEE-Z78172R2.md)
 - [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
@@ -50,6 +50,9 @@
 - [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
 - [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
 - 2016年04月 [WD My Cloud 4T](./devices/WD-My-Cloud-4T.md)
+- 2015年10月 [iPad Air2 JP Ver](./devices/iPad-Air2-JP.md)
+- 2015年09月 [iPad Air2 CN Ver](./devices/iPad-Air2-CN.md)
+- 2015年05月 [iPad Air2 Cellular](./devices/iPad-Air2-Cell.md)
 - 2014年12月 [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
 - 2015年02月 [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md)
 - 2015年01月 [Kubi iwork7](./devices/KB-iwork7.md)
