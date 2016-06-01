@@ -1,6 +1,6 @@
 ## 项目说明
 
-	记录搭建家用娱乐网络环境。
+    记录搭建家用娱乐网络环境。
 
 ### 目的
 
@@ -12,18 +12,35 @@
 - 满足高速家用网络传输需求。
 - 满足偶尔无聊的游戏需求。
 
-## 设备清单
+## 保持联网设备清单
 
 目前省钱(屌丝)方案中使用的设备:
 
-- 北京联通50M, 使用迅雷快鸟，叠加公网下行到10MB/s
-- MacBook Pro (2014年，i7 2.5GHz，16G内存，Retina)
-- HASEE Z7 (2015年，i7 2.6GHz，16G内存)
-- iPad Air2
-- 工控机N270, 945GM x2 (双网口x1, 单网口x1), D525 x1
-- NETGEAR WNDR4300 (全千兆，双频，双128MB)
-- WD MY CLOUD 3T (2014年红盘)
-- 硬盘若干
+- 宽带资源:
+    - 北京联通50M   多拨可到7~9MB/s (搬家后受限办理小区宽带);
+    - 北京联通4M    使用迅雷快鸟，可以叠到6MB/s
+- 主机资源:
+    - 工作机器: MacBook Pro (2014年，i7 2.2GHz，16GBRAM，Retina，千兆LAN & 5G WIFI)
+    - 编码机器: MacBook Pro (2014年，i7 2.5GHz，16GBRAM，Retina，千兆LAN & 5G WIFI)
+    - 资源机器: HASEE Z7    (2015年，i7 2.6GHz，32GBRAM，千兆LAN & 5G WIFI)
+    - 功能机器: N3700组装机  (2016年，N3700 1.6GHz，8GBRAM，千兆LANx4 & 5G WIFI)
+- 储存备份:
+    - 辅助备份: WD MY CLOUD 3T (2015年，千兆LAN)
+    - 主要备份: WD MY CLOUD 4T (2014年，千兆LAN)
+    - 临时储存: N3520 组装机 (2016年，N3520 2.166GHz，4GBRAM，千兆LAN)
+- 移动设备:
+    - iPad Air2     (2015年，5G WIFI & 4G)
+    - S7E           (2016年，5G WIFI & 4G)
+    - PSV           (2015年，2G WIFI)
+- 无线AP:
+    - NETGEAR WNDR4300  (2014年，全千兆，双频，双128MB，其实蛮靠谱的，入了两台了)
+    - Xiaomi Mini 第一版 (2015年/2016年，刷机之后蛮稳定的，硬伤是百兆LAN口，入了三台了)
+    - Xiaomi Mini 青春版 (2016年，功耗极低，入了一台)
+- 智能设备:
+    - 智能插座 x5       （2015年）
+    - 智能摄像头 x1      (2015年，之前用的小米，后来换了360水滴)
+- 历史设备: (已断电)
+    - 工控机 N270, 945GM x2 (双网口x1, 单网口x1), D525 x1, D425 x1
 
 ### 设备历史记录:
 
@@ -35,12 +52,7 @@
 - [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
 - MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
 - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
-
-2014-12-01
 - Lenovo Y485 (2012年，U换A10，添双SSD，16G内存)
-
-- WD MY CLOUD 3T (2014年红盘)
-- 几台可联网的娱乐设备
 
 ## 需求分析
 
