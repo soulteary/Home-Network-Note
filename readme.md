@@ -49,6 +49,7 @@
     - 2013年 MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
     - 2012年12月 [Lenovo Y485](./devices/Lenovo-Y485.md)
 - 路由器:
+    - 2015年05月 [XiaoMi Route 青春版](./devices/XiaoMi-Route-Young.md)
     - 2015年02月 [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
     - 2014年11月 [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
     - 2014年08月 [NETGEAR WNDR2000 300M](./devices/NetGear-WNR2000.md)
