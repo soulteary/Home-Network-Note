@@ -54,7 +54,7 @@
 - [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
 - MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
 - 2412Hx2 (DP+MiniDP+HDMI) + 2312HM(HDMI+VGA)
-- Lenovo Y485 (2012年，U换A10，添双SSD，16G内存)
+- [Lenovo Y485](./devices/Lenovo-Y485.md) (2012年)
 
 ## 需求分析
 
