@@ -40,6 +40,6 @@
     - 2013年08月 [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
 - 显示器:
     - 2016年05月 [LG 34UM68-P](./devices/LG-34UM68-P.md)
-    - 2015年04月 HKC T7000
+    - 2015年04月 [HKC T7000](./devices/HKC-T7000.md)
     - 2014年05月 [Dell U2412H组双屏](./devices/Dell-u2414h.md)
     - 2013年11月 [Dell U2312HM](./devices/Dell-u2312hm.md)
