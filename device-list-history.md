@@ -1,14 +1,18 @@
 ## 使用过的设备历史记录
 
-    以网络设备为主/娱乐辅助为辅
+    以网络设备为主/娱乐辅助为辅/部分过老或者完全没有参考（吐槽）价值的就不记录了
 
-- 主机电脑:
+- 笔电:
     - 2015年07月[HASEE Z7](./devices/HASEE-Z78172R2.md)
+    - 2015年 MacBook Pro (2013年，i7 2.2GHz，8G内存，Retina)
+    - 2013年 MacBook Pro (2013年，i7 2.5GHz，8G内存，Retina)
     - 2013年 MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
+    - 2013年03月 Thinkpad X230i (2013年，i7 2GHz，8G内存，Retina)
     - 2012年12月 [Lenovo Y485](./devices/Lenovo-Y485.md)
+    - 2008年XX月 SONY CS-19W
 - 路由网关:
+    - 2016年05月 [XiaoMi Route 青春版](./devices/XiaoMi-Route-Young.md)
     - 2016年03月 [NETGEAR GS308](./devices/NetGear-GS308.md)
-    - 2015年05月 [XiaoMi Route 青春版](./devices/XiaoMi-Route-Young.md)
     - 2015年02月 [XiaoMi Route Mini](./devices/XiaoMi-Route-Mini.md)
     - 2014年11月 [NETGEAR WNDR4300 750M](./devices/NetGear-WNDR4300.md)
     - 2014年08月 [NETGEAR WNDR2000 300M](./devices/NetGear-WNR2000.md)
@@ -26,9 +30,16 @@
     - 2015年01月 [Kubi iwork8](./devices/KB-iwork8.md)
     - 2013年06月 [Kindle Paper White 1st](./devices/Kindle-paper-white-1.md)
 - 各种网卡:
+    - 2016年05月 INTEL I350
+    - 2016年05月 INTEL 7260
+    - 2016年05月 INTEL 8260NGW
+    - 2015年12月 INTEL 82546EB
+    - 2015年08月 COMFAST CF-WU720
+    - 2016年05月 COMFAST CF-WU720
     - 2015年02月 [HUAWEI EC8201 3G Card](./devices/HUAWEI-EC8201-3G-Card.md)
     - 2013年08月 [HUAWEI E261 3G Card](./devices/HUAWEI-E261-3G-Card.md)
 - 显示器:
     - 2016年05月 [LG 34UM68-P](./devices/LG-34UM68-P.md)
+    - 2015年04月 HKC T7000
     - 2014年05月 [Dell U2412H组双屏](./devices/Dell-u2414h.md)
     - 2013年11月 [Dell U2312HM](./devices/Dell-u2312hm.md)
