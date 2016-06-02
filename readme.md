@@ -40,7 +40,8 @@
     - iPad Air2     (2015年，5G WIFI & 4G)
     - S7E           (2016年，5G WIFI & 4G)
     - PSV           (2015年，2G WIFI)
-- 无线AP:
+- 路由网关:
+    - NETGEAR GS308     (2016年，8口千兆交换机)
     - NETGEAR WNDR4300  (2014年，全千兆，双频，双128MB，其实蛮靠谱的，入了两台了)
     - Xiaomi Mini 第一版 (2015年/2016年，刷机之后蛮稳定的，硬伤是百兆LAN口，入了三台了)
     - Xiaomi Mini 青春版 (2016年，功耗极低，入了一台)
@@ -96,6 +97,7 @@
 
 ## 具体实践
 
+- [组件家用迷你服务器](./build-mini-home-server.md)
 - [基础网络使用](network.md)
 - [远程访问及数据交换](remote.md)
 - [无线使用](wifi.md)
