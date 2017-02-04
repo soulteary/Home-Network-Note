@@ -3,11 +3,12 @@
     以网络设备为主/娱乐辅助为辅/部分过老或者完全没有参考（吐槽）价值的就不记录了
 
 - 笔电:
+    - 2016年 MacBook Pro (2015年，i7 2.2GHz, 16GBRAM, Retina)
     - 2015年07月[HASEE Z7](./devices/HASEE-Z78172R2.md)
-    - 2015年 MacBook Pro (2013年，i7 2.2GHz，8G内存，Retina)
-    - 2013年 MacBook Pro (2013年，i7 2.5GHz，8G内存，Retina)
-    - 2013年 MacBook Pro (2013年，i7 2GHz，8G内存，Retina)
-    - 2013年03月 Thinkpad X230i (2013年，i7 2GHz，8G内存，Retina)
+    - 2015年 MacBook Pro (2013年，i7 2.2GHz, 16GBRAM, Retina)
+    - 2014年 MacBook Pro (2014年，i7 2.5GHz, 16GBRAM, Retina)
+    - 2014年 MacBook Pro (2014年，i7 2.0GHz, 16GBRAM, Retina)
+    - 2013年03月 Thinkpad X230i (2013年，i7 2GHz, 8GBRAM)
     - 2012年12月 [Lenovo Y485](./devices/Lenovo-Y485.md)
     - 2008年XX月 SONY CS-19W
 - 路由网关:
@@ -43,3 +44,4 @@
     - 2015年04月 [HKC T7000](./devices/HKC-T7000.md)
     - 2014年05月 [Dell U2412H组双屏](./devices/Dell-u2414h.md)
     - 2013年11月 [Dell U2312HM](./devices/Dell-u2312hm.md)
+
