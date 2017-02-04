@@ -39,9 +39,11 @@
 [待补全的设备清单](./device-list-history.md) | [显示器相关](./display-history.md)
 
 
-## 当前屋内常保持联网设备清单
+## 当前屋内常保持联网设备清单及方案
 
-[10～20设备可参考网络方案](./network.md)
+![网络结构](./assets/img/network.png)
+
+- [家用10～20台在线设备可参考网络方案](./network.md)
 
 
 ### 🌈 宽带资源
