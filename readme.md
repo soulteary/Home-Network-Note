@@ -115,8 +115,8 @@
 | 代码备份 | Ubuntu平板 | 2G WIFI | 128 SSD | 2016 |
 | 临时储存 | N3520 组装机    | 千兆LAN | 300G HDD | 2016 |
 | 长期备份 | Canon G3800 ^1 | 2G WIFI | -      | 2016 |
-| 建设备份 | Synology DS 718+ | 千兆LAN | 4T HDD | 2017 |
-| 建设备份 | Synology DS 115j | 千兆LAN | 4T HDD | 2017 |
+| 建设备份 | Synology DS 718+ ^5 | 千兆LAN | 4T HDD | 2017 |
+| 建设备份 | Synology DS 115j ^6 | 千兆LAN | 4T HDD | 2017 |
 | 主要备份 | WD MY CLOUD 4T | 千兆LAN | 4T HDD | 2015 |
 | 辅助备份 | WD MY CLOUD 3T | 千兆LAN | 3T HDD | 2014 |
 | 资源备份 | 硬盘x2 | - | 1T HDD | 2016 |
@@ -130,6 +130,8 @@
 - [2] 干掉持久化的纸质存储，最靠谱的莫过于加密级别的粉碎了。
 - [3] 把DSM兼容机的储存慢慢移动到白裙 & 冷备中，提高储存数据安全性。
 - [4] 再所有电源都带稳流稳压作用后，添加一台UPS防止市电闪断带来的数据损坏或者写输出脏掉的问题。
+- [5] DS718+ [网络性能测试](./report/mini-server/ds718.md)。
+- [5] DS115j [网络性能测试](./report/mini-server/ds115j.md)。
 - 慢慢把所有HDD都换成SSD吧！
 
 
