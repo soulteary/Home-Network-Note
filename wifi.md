@@ -16,11 +16,19 @@
 
 ## 网络性能参数
 
-- [二级网段-5G无线测试](./report/01.wireless-internal-5g-test.md) 平均37MB/s
+（网络中存活20+设备，并有下载活动）
 
-> 待持续补充参数 & 性能
+- [二级网段-5G无线测试](./report/01.wireless-internal-5g-test.md)：平均 37MB/s。
+- [二级网段-2G无线测试](./report/02.wireless-internal-2g-test.md)：平均 5MB/s。
+- [二级网段到一级网段-5G无线测试](./report/01.wireless-internal-5g-test.md)：平均 43.2MB/s。
+- [二级网段到一级网段-2G无线测试](./report/04.wireless-2g-public-cross-test.md)：平均 6MB/s。
+- [一级网段-5G无线测试](./report/05.wireless-5g-public-test.md)：平均 43.1MB/s。
+
+## 待补充
 
 - 内网多台设备一起进行无线备份时的速度／延迟
 
-- 2017.02.16 磁盘满，Mac使用Resilio Sync向一台主机（储存地址为M2 & SATA两块SSD）同步照片若干G，上传速度33～41.6MB/s。
+## 历史性能记录
+
+- 2017.02.16 磁盘满，Mac使用Resilio Sync向局域网一台主机（储存介质为M2 & SATA两块SSD）同步照片10G+，上传速度33～41.6MB/s。
 
