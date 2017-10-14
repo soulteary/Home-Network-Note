@@ -1,8 +1,9 @@
-## 使用过的设备历史记录
+# 使用过的设备历史记录
 
     以网络设备为主/娱乐辅助为辅/部分过老或者完全没有参考（吐槽）价值的就不记录了
 
 - 笔电:
+    - 2017年 MacBook (2017年，i5 1.3GHz, 8 GBRAM, Retina)
     - 2016年 MacBook Pro (2015年，i7 2.2GHz, 16GBRAM, Retina)
     - 2015年07月[HASEE Z7](./devices/HASEE-Z78172R2.md)
     - 2015年 MacBook Pro (2013年，i7 2.2GHz, 16GBRAM, Retina)
@@ -21,6 +22,8 @@
     - 2013年06月 [TP-LINK MR12U](./devices/TP-LINK-MR12U.md)
     - 2013年01月 [TP-LINK WN703N](./devices/TP-LINK-WR703N.md)
 - 储存介质:
+    - 2017年09月 [Synology DS718+](#)
+    - 2017年08月 [Synology DS115j](#)
     - 2016年04月 [WD My Cloud 4T](./devices/WD-My-Cloud-4T.md)
     - 2014年12月 [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
 - 移动设备:
