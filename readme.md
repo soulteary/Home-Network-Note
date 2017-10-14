@@ -90,15 +90,16 @@
 | 编码机器 | MacBook Pro ^3 | 千兆LAN & 5G WIFI | 16GBRAM / 500GB  | 2014 |
 | 资源机器 | HASEE Z7    ^4 | 千兆LAN & 5G WIFI | 32GBRAM / mixed  | 2015 |
 | 功能机器 | N3700组装机  ^5 | 千兆LANx4 & 5G WIFI | 16GBRAM / mixed | 2016 |
-| 代码仓库 | N3520 组装机 (N3520 2.166GHz)| 千兆LAN | 4GBRAM / mixed | 2016 |
-| 代码仓库 | ~~ONDA v939 Core M~~ ^6 | 4G / 2G WIFI | 4GBRAM / 128GB | 2016 |
+| 代码仓库 | N3520 组装机 (N3520 2.166GHz) ^6 | 千兆LAN | 4GBRAM / mixed | 2016 |
+| 代码仓库 | ~~ONDA v939 Core M~~ ^7 | 4G / 2G WIFI | 4GBRAM / 128GB | 2016 |
 
 - [1] N330，1.6GHz，跑负荷不重的应用，最基础的转码，其实足够了，[网络性能测试](./report/mini-server/dell-fx-160.md)。
 - [2] Mid 2015, i7 2.2GHz 其实还不错，如果主频能高点就好了。
 - [3] Mid 2014, i7 2.5GHz 已经碾压了三家公司(淘宝／美团／阿里云)配的笔记本了, Orz。
 - [4] i7 2.6GHz, 配合`hotkey`软件调节节能模式，性能表现极好。
 - [5] N3700 1.6GHz
-- [6] Core M 5y10c 2.0GHz，其实性能很不错，然而散热不足导致会降频，已废弃使用。
+- [6] N3520 [网络性能测试](./report/mini-server/n3520.md)。
+- [7] Core M 5y10c 2.0GHz，其实性能很不错，然而散热不足导致会降频，已废弃使用。
 
 ### 🚚 储存资源
 
