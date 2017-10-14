@@ -11,3 +11,9 @@ opkg update && opkg install iperf3
 ```
 brew install iperf3
 ```
+
+## 各种终端
+
+```
+docker pull networkstatic/iperf3
+```
