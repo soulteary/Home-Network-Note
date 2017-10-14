@@ -14,15 +14,15 @@
 - 部分设备不支持AES-WPK2加密方式的无线，并且可能存在临时入网的设备，不过分降低整体网络安全性，以及增加维护复杂度的情况下，水平添加一台路由做临时网络接入是相对靠谱的方案。
 - 网络插座存在潜在的安全风险，使用物理路由隔离相比较在路由上做策略，半年之后的可维护性更高。
 
-## 网络性能参数
+## 网络性能报告
 
 （网络中存活20+设备，并有下载活动）
 
-- [二级网段-5G无线测试](./report/01.wireless-internal-5g-test.md)：平均 37MB/s。
-- [二级网段-2G无线测试](./report/02.wireless-internal-2g-test.md)：平均 5MB/s。
-- [二级网段到一级网段-5G无线测试](./report/01.wireless-internal-5g-test.md)：平均 43.2MB/s。
-- [二级网段到一级网段-2G无线测试](./report/04.wireless-2g-public-cross-test.md)：平均 6MB/s。
-- [一级网段-5G无线测试](./report/05.wireless-5g-public-test.md)：平均 43.1MB/s。
+- [二级网段-5G无线测试](./report/wireless/01.internal-5g-test.md)：平均 37MB/s。
+- [二级网段-2G无线测试](./report/wireless/02.internal-2g-test.md)：平均 5MB/s。
+- [二级网段到一级网段-5G无线测试](./report/wireless/01.internal-5g-test.md)：平均 43.2MB/s。
+- [二级网段到一级网段-2G无线测试](./report/wireless/04.2g-public-cross-test.md)：平均 6MB/s。
+- [一级网段-5G无线测试](./report/wireless/05.5g-public-test.md)：平均 43.1MB/s。
 
 ## 待补充
 
