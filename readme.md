@@ -173,6 +173,7 @@
 
 ## 具体实践
 
+- [持续集成](./cicd.md)
 - [组件家用迷你服务器](./build-mini-home-server.md)
 - [家用10～20台在线设备可参考网络方案](./network.md)
 - [远程访问及数据交换](remote.md) ^1
