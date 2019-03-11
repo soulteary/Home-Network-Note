@@ -13,7 +13,7 @@ LAST UPDATE: 2019.03.11，完成远程访问和数据交互相关内容。
 | **核心** | 安全 | 高速 | 安全 | 无感知 | 易定制 | 流畅 | 流畅 |
 | **重要** | 高效 | 易用 | 简单 | 准确| 省心 | 省心 | 舒适 |
 | **可选** | 易用 | 安全 | 快速 | 全平台 | - | 冗余保障 | - |
-| **观点** | [数据备份的几个可执行观点](./data-backup.md) | [高速数据交换](./high-speed-data-exchange.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | - | [玩游戏的一些观点](./enjoy-game.md) |
+| **观点** | [数据备份的几个可执行观点](./data-backup.md) | [高速数据交换](./high-speed-data-exchange.md)、[远程访问及数据交换](remote.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | [持续集成](./cicd.md) | [玩游戏的一些观点](./enjoy-game.md) |
 
 ### 额外需求
 
@@ -172,12 +172,10 @@ LAST UPDATE: 2019.03.11，完成远程访问和数据交互相关内容。
 
 [设备列表及原因](./past.md)
 
-## 具体实践
+## 其他实践
 
-- [持续集成](./cicd.md)
 - [组件家用迷你服务器](./build-mini-home-server.md)
 - [家用10～20台在线设备可参考网络方案](./network.md)
-- [远程访问及数据交换](remote.md) 
 - [日志收集和查看](log.md) ^1
 - [虚拟化技术应用](./virtual.md) ^1
 - [1] 待更新。
