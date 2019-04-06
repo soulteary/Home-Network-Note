@@ -1,4 +1,5 @@
 .idea
 *.iml
 .UlyssesRoot
+.Ulysses-Group.plist
 .DS_Store
