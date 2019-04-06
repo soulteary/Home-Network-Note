@@ -91,7 +91,7 @@ LAST UPDATE: 2019.03.11，完成远程访问和数据交互相关内容。
 | 公司机器 | MacBook Pro ^2 | 千兆LAN / 5G WIFI | 16GBRAM / 250GB  | 2017 |
 | 冗余机器 | MacBook Pro ^3 | 千兆LAN & 5G WIFI | 16GBRAM / 500GB  | 2015 |
 | 资源机器 | DELL FX 160 x1 ^5 | 千兆LAN / 2G WIFI | 4GBRAM / mixed  | 2017 |
-| 资源机器 | DELL Optiplex 3020M x1 ^6 | 千兆LAN | 32GBRAM / mixed  | 2018 |
+| 资源机器 | DELL Optiplex 3020M x1 ^6 | 千兆LAN | 64GBRAM / mixed  | 2018 |
 
 - [1] 2017 15-inch, i7 2.9GHz 系统越来越差，键盘特别垃圾，不要买不要买不要买！！！
 - [2] 暂时闲散状态，没有使用公司机器，蝴蝶键盘体验贼差，不外接使用的话，不要买不要买不要买！！！
@@ -183,4 +183,3 @@ LAST UPDATE: 2019.03.11，完成远程访问和数据交互相关内容。
 ## 一些观点
 
 - [2016年上半年 自组x86软路由/迷你服务器的一些考虑](./think-about-x86-route-2016.md)
-
