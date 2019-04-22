@@ -13,7 +13,7 @@ LAST UPDATE: 2019.04.22，更新设备列表、容器使用方案。
 | **核心** | 安全 | 高速 | 安全 | 无感知 | 易定制 | 流畅 | 流畅 |
 | **重要** | 高效 | 易用 | 简单 | 准确| 省心 | 省心 | 舒适 |
 | **可选** | 易用 | 安全 | 快速 | 全平台 | - | 冗余保障 | - |
-| **观点** | [数据备份的几个可执行观点](./data-backup.md) | [高速数据交换](./high-speed-data-exchange.md)、[远程访问及数据交换](remote.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | [持续集成](./cicd.md)、[如何使用 GitLab](./gitlab.md)、[虚拟化和容器](./docker-and-vmware.md) | [玩游戏的一些观点](./enjoy-game.md) |
+| **观点** | [数据备份的几个可执行观点](./data-backup.md) | [高速数据交换](./high-speed-data-exchange.md)、[远程访问及数据交换](remote.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | [持续集成](./cicd.md)、[如何使用 GitLab](./notes/gitlab-usage.md)、[虚拟化和容器](./notes/docker-and-vmware.md) | [玩游戏的一些观点](./enjoy-game.md) |
 
 ### 额外需求
 
@@ -34,6 +34,7 @@ LAST UPDATE: 2019.04.22，更新设备列表、容器使用方案。
 ## 历史设备列表
 
 	如果你考虑入手一些设备(主机/路由/网卡/显示器/储存/移动设备/娱乐/...)，或许可以从这里得到一些参考信息。
+	也可以翻到文档底部，看看哪些设备（断电设备）不值得购买。
 
 [待补全的设备清单](./device-list-history.md) | [显示器相关](./display-history.md)
 

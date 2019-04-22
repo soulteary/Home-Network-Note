@@ -14,7 +14,9 @@
 - Mem: 4GB
 - Disk: 200GB
 
-完整搭建参考文档：
+## 搭建文档
+
+我推荐使用容器的方式进行搭建和维护，下面是一些记录，希望能够帮助到你。
 
 - [ 迁移 GitLab 数据到全新容器 ](https://soulteary.com/2018/09/27/migrate-your-gitlab.html)
 - [ GitLab 迁移之后的事情 ](https://soulteary.com/2018/09/29/after-gitlab-migration.html)
