@@ -93,6 +93,7 @@ LAST UPDATE: 2019.04.22，更新设备列表、容器使用方案。
 | 冗余机器 | MacBook Pro ^3 | 千兆LAN & 5G WIFI | 16GBRAM / 500GB  | 2015 |
 | 资源机器 | DELL FX 160 ^4 | 千兆LAN / 2G WIFI | 4GBRAM / mixed  | 2017 |
 | 资源机器 | HP EliteDesk G4 800 x1 ^5 | 千兆LAN & 5G WIFI | 64GBRAM / mixed | 2018 |
+| 资源机器 | HP Gen8 MicroServer x1 ^6 | 千兆LAN | 4GBRAM / mixed | 2019 |
 
 
 - [1] 2017 15-inch, i7 2.9GHz 系统越来越差，键盘特别垃圾，不要买不要买不要买！！！
@@ -100,6 +101,8 @@ LAST UPDATE: 2019.04.22，更新设备列表、容器使用方案。
 - [3] Mid 2014, i7 2.5GHz 目前闲置了，碾压了四家公司(淘宝／美团／阿里云/小赢)配的五台笔记本 Orz，之前在家里提供容器服务和日常投屏功能。
 - [4] 原本入手了四台，目前仅留了一台作为一些网站 Hosting 使用。N330，1.6GHz，跑负荷不重的应用，最基础的转码，其实足够了，[网络性能测试](./report/mini-server/dell-fx-160.md)，如果你使用被动散热的机器，原来的 N3520小机器 [网络性能测试](./report/mini-server/n3520.md) 的报告可以了解一下。
 - [5] 目前使用下来最满意的机器 [配置详情](./notes/2018-hp-elitedesk-g4-800.md)，完美托管了所有的容器服务。
+- [6] 最新购置了一台DIY后的“硬盘盒”，晚些聊聊这台设备。
+
 
 ### 🚚 储存资源
 
