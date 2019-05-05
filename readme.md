@@ -1,8 +1,8 @@
 🚧 **Under Construction** 🚧
 
-<div style="font-size:14px;">
-<span style="color: #ffffff; background: #000000; padding:5px 10px 5px 10px;border-radius:6px 0 0 6px;">Last Update</span><span style="color: #000000; background: #FE9A00; padding:5px 10px;border-radius:0 6px 6px 0;">2019.05.05</span>
-</div>
+![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square)
+
+![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square)
 
 简单更新持续集成部分。
 
