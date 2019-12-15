@@ -40,7 +40,6 @@
 
 | 明细 | 备注 | 开始服务 |
 | --- | --- | --- |
-
 | MacBook Pro 2017款 ^1 | 千兆LAN & 5G WIFI / 16GBRAM / 1T SSD  | 2017 |
 | MacBook Pro 2014款 ^2 | 千兆LAN & 5G WIFI / 16GBRAM / 512GB SSD  | 2015 |
 | HASEE Z7 ^3 | 千兆LAN & 5G WIFI / 32GBRAM / 1T SSD  | 2015 |
