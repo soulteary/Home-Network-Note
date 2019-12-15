@@ -129,6 +129,7 @@
 | 游戏机 | PS4 Pro | 2G WIFI | 500G SSD | 2017 |
 | 游戏机 | Switch | 2G WIFI | 忽略 | 2017 |
 | 爪机 | iPhone 11 Pro | 4G / 5G WIFI | 512G  | 2019 |
+| 爪机 | Redmi K20 Pro | 4G / 5G WIFI | 128G  | 2019 |
 | 爪机 | iPhone SE | 4G / 5G WIFI | 64G  | 2017 |
 | 爪机 | iP3GS ^1 | 2G / 2G WIFI | 忽略 | 2017 |
 | 游戏机 | PSVx2 ^2 | 2G WIFI | 16G / 64G | 2015 / 2016 |
@@ -174,6 +175,7 @@
 
 ## 其他记录
 
+- [博客中的折腾笔记](https://soulteary.com/subject/life/)
 - [2016年上半年 自组x86软路由/迷你服务器的一些考虑](./notes/2016-think-about-x86-route.md)
 - [2016年组建家用迷你服务器](./notes/2016-build-mini-home-server.md)
 - [日志收集和查看](log.md) ^1
