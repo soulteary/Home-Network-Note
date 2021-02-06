@@ -19,7 +19,7 @@
 | **核心** | 安全 | 高速 | 安全 | 无感知 | 易定制 | 流畅 | 流畅 |
 | **重要** | 高效 | 易用 | 简单 | 准确| 省心 | 省心 | 舒适 |
 | **可选** | 易用 | 安全 | 快速 | 全平台 | - | 冗余保障 | - |
-| **观点** | [数据备份的几个可执行观点](./data-backup.md)、[更方便的自签证书生成](https://github.com/soulteary/certs-maker) | [高速数据交换](./high-speed-data-exchange.md)、[远程访问及数据交换](remote.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | [持续集成](./cicd.md)、[如何使用 GitLab](./notes/gitlab-usage.md)、[虚拟化和容器](./notes/docker-and-vmware.md) | [玩游戏的一些观点](./enjoy-game.md) |
+| **观点** | [数据备份的几个可执行观点](./data-backup.md)、[更方便的自签证书生成](https://github.com/soulteary/certs-maker) 、[如何制作和使用自签名证书](https://soulteary.com/2021/02/06/how-to-make-and-use-a-self-signed-certificate.html)| [高速数据交换](./high-speed-data-exchange.md)、[远程访问及数据交换](remote.md) | [安全的网络接入](./secure-network-access.md) | [免维护的数据同步](./data-exchange.md) | - | [持续集成](./cicd.md)、[如何使用 GitLab](./notes/gitlab-usage.md)、[虚拟化和容器](./notes/docker-and-vmware.md) | [玩游戏的一些观点](./enjoy-game.md) |
 
 ### 额外需求
 
