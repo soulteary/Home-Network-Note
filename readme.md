@@ -97,9 +97,10 @@
 | 1 | 编码机器 | MacBook Pro 16 | 千兆LAN & 5G Wi-Fi | 32GBRAM / 2T  | 2019 |
 | 2 | 码字机器 | MacBook Pro m1 | 千兆LAN & 5G Wi-Fi | 8GBRAM / 512GB | 2021 |
 | 3 | 公司机器 | MacBook Pro 16 | 千兆LAN / 5G Wi-Fi | 16GBRAM / 1T  | 2020 |
-| 4 | 便携设备 | Nuc8i5beh | 千兆LAN / 5G Wi-Fi | 32GBRAM / 2T  | 2021 |
+| 4 | 便携设备 | Nuc8i5beh | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
 | 5 | 资源机器 | HP EliteDesk G4 800 x1 | 千兆LAN & 5G Wi-Fi | 64GBRAM / mixed | 2018 |
 | 6 | 资源机器 | HP Gen8 MicroServer x1 | 千兆LAN | 4GBRAM / mixed | 2019 |
+| 7 | 网络设备 | Nuc7cjyh | 千兆LAN | 8GBRAM / 256GB | 2021 |
 
 - [1] 2019 16-inch, i9 2.4GHz 终于等到的键盘改良款，开心。
 - [2] 13-inch, m1 吃螃蟹，不烫手的 Mac 真香。
@@ -107,6 +108,7 @@
 - [4] 入手原因[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)，有提及。极大的降低了 Mac 在日常使用过程中的烫手程度。
 - [5] 目前使用下来最满意的机器 [配置详情](./notes/2018-hp-elitedesk-g4-800.md)，完美托管了所有的容器服务。
 - [6] DIY的“硬盘盒”，已转手，晚些聊聊这台设备。[配置详情](./notes/2019-gen8-custom-made.md)
+- [7] 用来提供访问回家服务的设备，解放群晖跑容器，硬盘不休眠的问题。
 
 ### 🚚 储存资源
 
@@ -115,13 +117,14 @@
 | 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
 | --- | --- | --- | --- | --- |
 | 主力备份 | Synology DS 920+ ^1 | 千兆LAN | 16TB (32TB Raid1) + 512 Cache | 2020 |
-| 资源备份 | Synology DS 718+ ^2 | 千兆LAN | 4T HDD / 3T HDD | 2017 |
 | 资源机器 | HP Gen8 MicroServer x1 ^3 | 千兆LAN | - | 2019 |
 | 资源机器 | HP EliteDesk G4 800 ^4 | 千兆LAN | 2T SSD | 2018 |
 | 资源冷备 | 硬盘x4 ^5 | - | 1T HDD / 2T | 2016 / 2018 |
 | 长期备份 | Canon G3800 ^6 | 2G WIFI | -      | 2019 |
 | 清理备份 | Deli 9920 碎纸机 ^7 | - | -      | 2017 |
 | 电力保障 | APC BR550G ^8 | - | - | 2017/2019 |
+| 资源备份 | Synology DS 718+ ^2 | 千兆LAN | 4T HDD / 3T HDD | 2017 |
+
 
 - [1] DS920+新鲜的四盘位机器，目前使用 SSD 落地热数据，机械盘落地临时大尺寸数据，Raid 储存照片等珍贵数据，NVME 作为 Raid 缓存。
 - [2] DS718+ 服役快三年了，运行十分稳定，随着数据增长，储存空间不足故添加了一台四盘位机器，附：[DS718+ 网络性能测试](./report/mini-server/ds718.md)。
