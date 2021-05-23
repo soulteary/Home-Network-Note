@@ -36,7 +36,7 @@
 ## 储存介质
 
 - 2019年04月 [HP Gen8 MicroServer DIY](./devices/HP-Gen8-MicroServer.md)
-- 2017年09月 [Synology DS718+](#)
+- 2017年09月 [Synology DS718+](./notes/2021-ds718-plus-hard-drive-replacement-record.md)
 - 2017年08月 [Synology DS115j](./devices/DS115j.md)
 - 2016年04月 [WD My Cloud 4T](./devices/WD-My-Cloud-4T.md)
 - 2014年12月 [WD My Cloud 3T](./devices/WD-My-Cloud-3T.md)
