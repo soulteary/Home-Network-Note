@@ -94,20 +94,18 @@
 | 序号 | 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 编码机器 | MacBook Pro 16 | 千兆LAN & 5G Wi-Fi | 32GBRAM / 2T  | 2019 |
-| 2 | 码字机器 | MacBook Pro m1 | 千兆LAN & 5G Wi-Fi | 8GBRAM / 512GB | 2021 |
+| 2 | 便携机器 | ThinkPad L14 | 千兆LAN & 5G Wi-Fi | 64GBRAM / 1T  | 2021 |
 | 3 | 公司机器 | MacBook Pro 16 | 千兆LAN / 5G Wi-Fi | 16GBRAM / 1T  | 2020 |
-| 4 | 便携设备 | Nuc8i5beh | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
-| 5 | 资源机器 | HP EliteDesk G4 800 x1 | 千兆LAN & 5G Wi-Fi | 64GBRAM / mixed | 2018 |
-| 6 | 资源机器 | HP Gen8 MicroServer x1 | 千兆LAN | 4GBRAM / mixed | 2019 |
-| 7 | 网络设备 | Nuc7cjyh | 千兆LAN | 8GBRAM / 256GB | 2021 |
+| 4 | 资源机器 | Nuc8i5BEH | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
+| 5 | 网络设备 | Nuc7CJYH | 千兆LAN | 8GBRAM / 256GB | 2021 |
+| 6 | 码字机器 | MacBook Pro m1 | 千兆LAN & 5G Wi-Fi | 8GBRAM / 512GB | 2021 |
 
-- [1] 2019 16-inch, i9 2.4GHz 终于等到的键盘改良款，开心。
-- [2] 13-inch, m1 吃螃蟹，不烫手的 Mac 真香。
-- [3] 2019 16-inch, i7 2.6GHz 公司使用，大概比自己的机器性能弱 20～30%。
-- [4] 入手原因[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)，有提及。极大的降低了 Mac 在日常使用过程中的烫手程度。
-- [5] 目前使用下来最满意的机器 [配置详情](./notes/2018-hp-elitedesk-g4-800.md)，完美托管了所有的容器服务。
-- [6] DIY的“硬盘盒”，已转手，晚些聊聊这台设备。[配置详情](./notes/2019-gen8-custom-made.md)
-- [7] 用来提供访问回家服务的设备，解放群晖跑容器，硬盘不休眠的问题。
+- [1] 时隔多年，终于等到的键盘改良款，体验非常好（i9 2.4GHz），尤其是在做复杂性能测试的时候。
+- [2] 无显卡版本，仅 45w 峰值功耗，性能非常强，核心数也非常多，作为一台便携的“服务器”使用，用于拓展本地开发资源，提供一个冗余一些的资源跑测试服务，替换之前使用的 [HP EliteDesk G4 800](./devices/HP-EliteDesk-G4-800.md) 小型工作站。
+- [3] 公司机器，配置为 i7 2.6GHz ，实测性能大概比 i9 款弱 20%～30%。
+- [4] 入手原因见[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)。在随后不断添置和更新设备后，这台设备职能更新为软件测试资源，提供搭建各种开源软件分布式环境场景所使用的虚拟机环境，极大的降低了笔记本发热的程度。
+- [5] 用来提供稳定的“回家网络”、个人公开 Wiki 资源，以及解决群晖跑容器，硬盘不会休眠的问题。
+- [6] 13-inch, m1 吃螃蟹，性能非常强，逼近 i9 的设备。
 
 ### 🚚 储存资源
 
