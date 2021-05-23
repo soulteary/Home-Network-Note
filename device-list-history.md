@@ -2,11 +2,12 @@
 
     以网络设备为主/娱乐辅助为辅/部分过老或者完全没有参考（吐槽）价值的就不记录了
 
-## 笔电
+## 主机资源
 
 - 2020年 MacBook Pro 16inch (2019年，i7 2.6GHz, 16GBRAM, Retina)
 - 2019年 MacBook Pro 16inch (2019年，i9 2.4GHz, 32GBRAM, Retina)
 - 2019年 MacBook Pro 13inch (2019年，i5 2.4GHz, 8GBRAM, Retina)
+- 2018年09月 [HP EliteDesk G4 800](./devices/HP-EliteDesk-G4-800.md)，（i7 8700, 64GBRAM）
 - 2018年 MacBook Pro 15inch (2017年，i7 2.9GHz, 16GBRAM, Retina)
 - 2017年 MacBook Pro 15inch (2016年，i5 2.5GHz, 16GBRAM, Retina)
 - 2017年 MacBook 12inch (2017年，i5 1.3GHz, 8 GBRAM, Retina)
