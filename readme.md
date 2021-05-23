@@ -68,7 +68,7 @@
 
 ### ⭐️ 路由网关
 
-> 影响网络质量的核心设备，负责部分网络安全事务
+> 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/master/device-list-history.md#%E8%B7%AF%E7%94%B1%E7%BD%91%E5%85%B3)。
 
 | 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
 | --- | --- | --- | --- | --- |
