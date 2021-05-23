@@ -18,6 +18,7 @@
     - 2012年12月 [Lenovo Y485](./devices/Lenovo-Y485.md)
     - 2008年XX月 SONY CS-19W
 - 路由网关:
+    - 2018年11月 [Newifi D2](./devices/Newifi-D2.md)
     - 2016年09月 [Newifi D1](./devices/Newifi-D1.md)
     - 2016年05月 [XiaoMi Route 青春版](./devices/XiaoMi-Route-Young.md)
     - 2016年03月 [NETGEAR GS308](./devices/NetGear-GS308.md)
