@@ -24,6 +24,7 @@
 
 （网络中存活20+设备，并有下载活动）
 
+- [二级网段有线公网性能测试](./report/lan/04.internet-speedtest.md)：平均 900.71 Mbps。
 - [二级网段有线网络性能测试](./report/lan/01.internal-test.md)：平均 86.5MB/s。
 - [二级网段到一级网段-有线网络测试](./report/lan/02.public-cross-test.md)：平均 91.1MB/s。
 - [一级网段有线网络性能测试](./report/lan/03.public-test.md)：平均 86.4MB/s。
