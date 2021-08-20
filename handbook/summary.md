@@ -17,7 +17,9 @@
     - [为什么不建议使用提速软件](items-in-use/boardband.md)
 - [⭐️ 路由网关](items-in-use/gateway.md)
     - [家用网络为什么需要交换机](items-in-use/gateway.md)
-
+- [💻 主机资源](handbook/items-in-use/computing.md)
+    - [为什么主力是笔记本而非台式机](handbook/items-in-use/computing.md)
+    - [NUC 不跑黑苹果，可以用来干嘛](handbook/items-in-use/computing.md)
 
 
 
