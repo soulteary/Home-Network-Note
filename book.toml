@@ -1,0 +1,17 @@
+[book]
+title = "折腾技术 / HOME-NETWORK-NOTE 🚀"
+description = "记录搭建兼顾学习娱乐的家用网络环境的过程，折腾过的一些软硬件小经验。"
+authors = ["soulteary"]
+language = "en"
+multilingual = false
+src = "handbook"
+
+[build]
+build-dir = "../release"
+
+[output.html]
+git-repository-url="https://github.com/soulteary/Home-Network-Note"
+edit-url-template="https://github.com/soulteary/Home-Network-Note/edit/main/{path}"
+
+[output.html.search]
+enable = false

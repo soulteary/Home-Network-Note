@@ -1,2 +1,8 @@
 .DS_Store
 .Ulysses*
+
+release/*.html
+release/*/*.html
+release/**/*.jpg
+release/**/*.jpeg
+release/**/*.png
