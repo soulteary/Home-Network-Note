@@ -24,7 +24,7 @@
     - [群晖的省心用法](items-in-use/storage.md)
     - [如何将闲置磁盘变废为“实用”](items-in-use/storage.md)
     - [碎纸机的选购](items-in-use/storage.md)
-
+- [📱 移动设备 & 🎮 游戏设备](items-in-use/entertainment.md)
 
 # 设备联网
 
