@@ -2,7 +2,8 @@
 
 目前数据访问抽象图如下：
 
-![远程访问及数据交换][image-1]
+![远程访问及数据交换](assets/remote.png)
+
 
 ## 远程管理
 
@@ -52,5 +53,3 @@
 [2]:	https://soulteary.com/2019/03/11/mac-osx-starts-up-applications-supervisor.html
 [3]:	https://soulteary.com/2018/08/15/docker-on-synology-gleaning.html
 [4]:	https://soulteary.com/2018/06/13/synology-with-supervisor.html
-
-[image-1]:	./assets/img/remote.png
