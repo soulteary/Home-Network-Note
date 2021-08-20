@@ -13,8 +13,10 @@
 # 使用中的资源
 
 - [🌈 宽带资源](items-in-use/boardband.md)
+    - [为什么不建议使用多条宽带](items-in-use/boardband.md)
+    - [为什么不建议使用提速软件](items-in-use/boardband.md)
 - [⭐️ 路由网关](items-in-use/gateway.md)
-
+    - [家用网络为什么需要交换机](items-in-use/gateway.md)
 
 
 
