@@ -13,6 +13,7 @@
 # 使用中的资源
 
 - [🌈 宽带资源](items-in-use/boardband.md)
+- [⭐️ 路由网关](items-in-use/gateway.md)
 
 
 
