@@ -4,11 +4,18 @@
 
 --------
 
-## 网络架构
+# 网络架构
 
 - [当前网络架构](network/network-topology.md)
-- [无线网络的方案及性能数据](network/wifi-topology.md)
-- [有线使用](network/lan-topology.md)
+    - [无线网络的方案及性能数据](network/wifi-topology.md)
+    - [有线使用](network/lan-topology.md)
+
+# 使用中的资源
+
+- [🌈 宽带资源](items-in-use/boardband.md)
+
+
+
 
 
 # 设备联网
