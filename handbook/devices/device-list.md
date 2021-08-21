@@ -5,6 +5,8 @@
 
 ## 主机资源
 
+TODO：等待更新
+
 - 2020年 MacBook Pro 16inch (2019年，i7 2.6GHz, 16GBRAM, Retina)
 - 2019年 MacBook Pro 16inch (2019年，i9 2.4GHz, 32GBRAM, Retina)
 - 2019年 MacBook Pro 13inch (2019年，i5 2.4GHz, 8GBRAM, Retina)
@@ -23,6 +25,8 @@
 
 ## 路由网关
 
+TODO：等待更新
+
 - 2018年11月 [Newifi D2](Newifi-D2.md)
 - 2016年09月 [Newifi D1](Newifi-D1.md)
 - 2016年05月 [XiaoMi Route 青春版](XiaoMi-Route-Young.md)
@@ -36,6 +40,8 @@
 
 ## 储存介质
 
+TODO：等待更新
+
 - 2019年04月 [HP Gen8 MicroServer DIY](HP-Gen8-MicroServer.md)
 - 2017年09月 [Synology DS718+](./notes/2021-ds718-plus-hard-drive-replacement-record.md)
 - 2017年08月 [Synology DS115j](DS115j.md)
@@ -44,6 +50,9 @@
 
 ## 移动设备
 
+TODO：等待和废弃设备合并
+
+- 2017年07月 [Nintendo Switch HK Ver]()
 - 2015年10月 [iPad Air2 JP Ver](iPad-Air2-JP.md)
 - 2015年09月 [iPad Air2 CN Ver](iPad-Air2-CN.md)
 - 2015年05月 [iPad Air2 Cellular](iPad-Air2-Cell.md)
@@ -52,6 +61,8 @@
 - 2013年06月 [Kindle Paper White 1st](Kindle-paper-white-1.md)
 
 ## 各种网卡
+
+TODO：等待更新
 
 - 2016年05月 INTEL I350
 - 2016年05月 INTEL 7260
@@ -63,6 +74,8 @@
 - 2013年08月 [HUAWEI E261 3G Card](HUAWEI-E261-3G-Card.md)
 
 ## 显示器
+
+TODO：等待更新
 
 - 2016年05月 [LG 34UM68-P](LG-34UM68-P.md)
 - 2015年04月 [HKC T7000](HKC-T7000.md)
