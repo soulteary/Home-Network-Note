@@ -1,6 +1,6 @@
 🚧 **Under Construction / 持续更新** 🚧
 
-![Project Start in 2016](https://img.shields.io/badge/Project%20Start-2016-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
+![Project Start in 2014](https://img.shields.io/badge/Project%20Start-2014-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
 
 **这几年积累/分享了不少实践内容，是时候把这个项目的坑填上了。**
 
@@ -9,7 +9,7 @@
 ```text
 记录搭建兼顾学习娱乐的家用网络环境的过程，折腾过的一些软硬件小经验。
 
-网络方案从 2016 年使用至今，非常稳定，整体架构几乎没有变化。（日常在线 20~30 台设备，峰值 50+ ）
+目前的网络方案从 2016 年使用至今，非常稳定，整体架构几乎没有变化。（日常在线 20~30 台设备，峰值 50+ ）
 
 文档中的方案和方案中的配置会尽可能**保持简单**，确保各种服务在运行一年之后，我依旧能够对软硬件进行**轻松简单**的“维护、升级以及替换”操作。
 ```
