@@ -7,7 +7,7 @@ multilingual = false
 src = "handbook"
 
 [build]
-build-dir = "../release"
+build-dir = "../home-network-note-release"
 
 [output.html]
 git-repository-url="https://github.com/soulteary/Home-Network-Note"
