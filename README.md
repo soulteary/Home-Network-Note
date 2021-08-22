@@ -1,6 +1,6 @@
 🚧 **Under Construction / 持续更新** 🚧
 
-![Project Start in 2014](https://img.shields.io/badge/Project%20Start-2014-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
+![Project Start in 2014](https://img.shields.io/badge/Project%20Start-2014-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) [![Build Status](https://drone.zheteng.dev/api/badges/soulteary/Home-Network-Note/status.svg)](https://drone.zheteng.dev/soulteary/Home-Network-Note) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
 
 **这几年积累/分享了不少实践内容，是时候把这个项目的坑填上了。**
 
