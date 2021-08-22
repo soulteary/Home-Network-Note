@@ -1,0 +1,32 @@
+---
+kind: pipeline
+name: default
+clone:
+  depth: 1
+steps:
+
+- name: convert
+  image: soulteary/mdbook
+  depends_on: [ clone ]
+  pull: if-not-exists
+  commands:
+    - mdbook build -d dist
+
+- name: publish
+  image: soulteary/tencent-cos
+  depends_on: [ convert ]
+  pull: if-not-exists
+  environment:
+    SECRET_ID:
+      from_secret: SECRET_ID
+    SECRET_KEY:
+      from_secret: SECRET_KEY
+    BUCKET:
+      from_secret: BUCKET
+    REGION:
+      from_secret: REGION
+  commands:
+    - sed -i -e "s/<%SECRET_ID%>/$${SECRET_ID}/" -e "s/<%SECRET_KEY%>/$${SECRET_KEY}/" -e "s/<%BUCKET%>/$${BUCKET}/" -e "s/<%REGION%>/$${REGION}/" .cos.conf
+    - cp .cos.conf /root/
+    - cd dist && ls -al
+    - coscmd upload -f --delete -rs ./ /
