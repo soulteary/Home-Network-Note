@@ -25,8 +25,8 @@
 | **可选因素** | 网速、组网模式 | 易用     | 安全 | 跨平台 | 冗余保障 | |
 
 
-[查看手册](./handbook/summary.md)
-
+- [在GitHub上查看手册](./handbook/summary.md)
+- [浏览部署后的网站](https://home-network-note.suyang.wiki/)
 
 ### 场景举例
 
