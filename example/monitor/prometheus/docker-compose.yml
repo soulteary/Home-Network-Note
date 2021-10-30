@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+
+  prometheus:
+    image: prom/prometheus:v2.30.3
+    container_name: prometheus
+    restart: always
+    user: root
+    volumes:
+      - ./config:/etc/prometheus
+      - ./data:/prometheus
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/etc/prometheus/console_libraries"
+      - "--web.console.templates=/etc/prometheus/consoles"
+      - "--storage.tsdb.retention.time=1y"
+      # 根据自己需求来考虑是否开启
+      # https://prometheus.io/docs/prometheus/latest/migration/#prometheus-lifecycle
+      - "--web.enable-lifecycle"
+    expose:
+      - 9090
+    ports:
+      - 9090:9090
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  monitor:
+    external: true

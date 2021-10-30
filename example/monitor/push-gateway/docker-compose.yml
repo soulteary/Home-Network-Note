@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  pushgateway:
+    image: prom/pushgateway:v1.4.2
+    container_name: pushgateway
+    restart: always
+    ports:
+      - 9091:9091
+    expose:
+      - 9091
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+networks:
+  monitor:
+    external: true

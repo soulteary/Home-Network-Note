@@ -1,0 +1,45 @@
+global:
+  # 监控自身状态
+  scrape_interval:     15s
+  # 报警评估周期
+  # 可以关联阅读，理解报警的生命周期
+  # https://pracucci.com/prometheus-understanding-the-delays-on-alerting.html
+  evaluation_interval: 15s
+  # 和其他组件时通讯时使用，起个名字区别不同的数据来源
+  external_labels:
+      monitor: 'docker-prometheus'
+
+# 监控规则文件列表
+rule_files:
+  - "alert.rules"
+
+# 配置要与 Prometheus 通信（被抓取）的服务接口
+scrape_configs:
+  - job_name: 'nodeexporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['nodeexporter:9100']
+
+  - job_name: 'cadvisor'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  - job_name: 'prometheus'
+    scrape_interval: 10s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'pushgateway'
+    scrape_interval: 10s
+    honor_labels: true
+    static_configs:
+      - targets: ['pushgateway:9091']
+
+# 配置监控报警服务
+alerting:
+  alertmanagers:
+  - scheme: http
+    static_configs:
+    - targets:
+      - 'alertmanager:9093'

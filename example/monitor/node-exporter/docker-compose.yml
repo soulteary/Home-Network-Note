@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  nodeexporter:
+    image: prom/node-exporter:v1.2.2
+    container_name: nodeexporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.rootfs=/rootfs"
+      - "--path.sysfs=/host/sys"
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)"
+    restart: always
+    expose:
+      - 9100
+    ports:
+      - 9100:9100
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  monitor:
+    external: true

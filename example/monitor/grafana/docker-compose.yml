@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  grafana:
+    image: grafana/grafana:8.2.2
+    container_name: grafana
+    user: "472"
+    volumes:
+      - ./data:/data:rw
+      - ./datasources:/etc/grafana/provisioning/datasources
+    environment:
+      - GF_PATHS_DATA=/data
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: always
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  monitor:
+    external: true

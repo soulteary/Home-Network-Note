@@ -12,6 +12,7 @@ build-dir = "../home-network-note-release"
 [output.html]
 git-repository-url="https://github.com/soulteary/Home-Network-Note"
 edit-url-template="https://github.com/soulteary/Home-Network-Note/edit/main/{path}"
+google-analytics = "G-RXQS80RJYV"
 
 [output.html.search]
 enable = false

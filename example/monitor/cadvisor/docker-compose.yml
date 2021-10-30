@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  cadvisor:
+    image: google/cadvisor:v0.33.0
+    container_name: cadvisor
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      # 仅限 Linux 环境使用
+      - /cgroup:/cgroup:ro
+    restart: always
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+networks:
+  monitor:
+    external: true

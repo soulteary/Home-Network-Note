@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  alertmanager:
+    image: prom/alertmanager:v0.23.0
+    container_name: alertmanager
+    volumes:
+      - ./config.yml:/etc/alertmanager/config.yml
+    command:
+      - "--config.file=/etc/alertmanager/config.yml"
+      - "--storage.path=/alertmanager"
+    restart: always
+    expose:
+      - 9093
+    ports:
+      - 9093:9093
+    networks:
+      - monitor
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  monitor:
+    external: true
