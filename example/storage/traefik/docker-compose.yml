@@ -1,0 +1,92 @@
+version: "3"
+services:
+  traefik:
+    container_name: traefik
+    image: traefik:v2.5.0
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - traefik
+    # https://suyang.wiki/runbook/traefik/issue-certs.html
+    # environment:
+    #  - CF_API_EMAIL=你的邮箱
+    #   - CLOUDFLARE_DNS_API_TOKEN=你的API TOKEN
+    #   - CLOUDFLARE_ZONE_API_TOKEN=你的API TOKEN
+    command:
+      - "--global.sendanonymoususage=false"
+      - "--global.checknewversion=false"
+      - "--entrypoints.http.address=:80"
+      - "--entrypoints.https.address=:443"
+      - "--entryPoints.http.forwardedHeaders.trustedIPs=127.0.0.1/32,172.18.0.1/24"
+      - "--entryPoints.https.forwardedHeaders.trustedIPs=127.0.0.1/32,172.18.0.1/24"
+      - "--api=true"
+      - "--api.insecure=true"
+      - "--api.dashboard=true"
+      - "--api.debug=false"
+      - "--ping=true"
+      - "--log.level=trace"
+      - "--log.format=common"
+      - "--accesslog=false"
+      - "--providers.docker=true"
+      - "--providers.docker.watch=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.endpoint=unix:///var/run/docker.sock"
+      - "--providers.docker.swarmMode=false"
+      - "--providers.docker.useBindPortIP=false"
+      - "--providers.docker.network=traefik"
+      - "--providers.file=true"
+      - "--providers.file.watch=true"
+      - "--providers.file.directory=/etc/traefik/config"
+      - "--providers.file.debugloggeneratedtemplate=true"
+      # - "--certificatesresolvers.le.acme.email=你的邮箱"
+      # - "--certificatesresolvers.le.acme.storage=/data/ssl/acme.json"
+      # - "--certificatesresolvers.le.acme.dnsChallenge.resolvers=1.1.1.1:53,8.8.8.8:53"
+      # - "--certificatesresolvers.le.acme.dnsChallenge.provider=cloudflare"
+      # - "--certificatesresolvers.le.acme.dnsChallenge.delayBeforeCheck=30"
+    volumes:
+      # 仅限标准的 Linux 环境
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./config/:/etc/traefik/config/:ro
+      - ./ssl/:/data/ssl/
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      # 如果你希望自动申请泛解析域名
+      # - "traefik.http.routers.traefik-dash-web.tls.certresolver=le"
+      # - "traefik.http.routers.traefik-dash-web.tls.domains[0].main=suyang.wiki"
+      # - "traefik.http.routers.traefik-dash-web.tls.domains[0].sans=*.suyang.wiki,*.demo.suyang.wiki"
+
+      - "traefik.http.routers.traefik-dash-web.tls=true"
+      - "traefik.http.routers.traefik-dash-web.entrypoints=https"
+      - "traefik.http.routers.traefik-dash-web.rule=Host(`traefik.console.storage.lab.com`) && PathPrefix(`/`)"
+      - "traefik.http.routers.traefik-dash-web.service=dashboard@internal"
+
+      - "traefik.http.routers.traefik-dash-api.entrypoints=https"
+      - "traefik.http.routers.traefik-dash-api.rule=Host(`traefik.console.storage.lab.com`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
+      - "traefik.http.routers.traefik-dash-api.tls=true"
+      - "traefik.http.routers.traefik-dash-api.service=api@internal"
+
+    extra_hosts:
+      # https://github.com/containous/traefik/blob/master/pkg/version/version.go#L61
+      - "update.traefik.io:127.0.0.1"
+      # https://github.com/containous/traefik/blob/master/pkg/collector/collector.go#L20
+      - "collect.traefik.io:127.0.0.1"
+      - "stats.g.doubleclick.net:127.0.0.1"
+      - "traefik.console.storage.lab.com:127.0.0.1"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost:8080/ping || exit 1"]
+      interval: 3s
+      retries: 12
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  traefik:
+    external: true

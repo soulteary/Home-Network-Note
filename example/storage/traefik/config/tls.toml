@@ -1,0 +1,26 @@
+# https://suyang.wiki/runbook/traefik/issue-certs.html
+[tls]
+  [tls.options]
+    [tls.options.default]
+      minVersion = "VersionTLS12"
+      sniStrict = true
+      cipherSuites = [
+        # TLS 1.3
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256",
+        # TLS 1.2
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+      ]
+
+    [tls.stores]
+        [tls.stores.default]
+            [tls.stores.default.defaultCertificate]
+            certFile = "/data/ssl/lab.com.crt"
+            keyFile = "/data/ssl/lab.com.key"
+
+  [[tls.certificates]]
+    certFile = "/data/ssl/lab.com.crt"
+    keyFile = "/data/ssl/lab.com.key"
