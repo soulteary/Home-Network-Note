@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  syncthing:
+    image: ${DOCKER_SYNCTHING_IMAGE_NAME}
+    container_name: ${DOCKER_SYNCTHING_HOSTNAME}
+    hostname: ${DOCKER_SYNCTHING_HOSTNAME}
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./data:/var/syncthing
+    ports:
+      - target: 8384
+        published: 8384
+        protocol: tcp
+        mode: host
+      - target: 22000
+        published: 22000
+        protocol: tcp
+        mode: host
+      - target: 22000
+        published: 22000
+        protocol: udp
+        mode: host
+    restart: always
+    network_mode: host
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  traefik:
+    external: true

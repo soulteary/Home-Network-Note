@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  syncthing:
+    image: ${DOCKER_SYNCTHING_IMAGE_NAME}
+    container_name: ${DOCKER_SYNCTHING_HOSTNAME}
+    hostname: ${DOCKER_SYNCTHING_HOSTNAME}
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./data:/var/syncthing
+    ports:
+      - "22000:22000"
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.sync-http.entrypoints=http"
+      - "traefik.http.routers.sync-http.rule=Host(`${DOCKER_SYNCTHING_DOMAIN}`)"
+      - "traefik.http.routers.sync-http.service=sync-backend"
+
+      - "traefik.http.routers.sync-https.entrypoints=https"
+      - "traefik.http.routers.sync-https.tls=true"
+      - "traefik.http.routers.sync-https.rule=Host(`${DOCKER_SYNCTHING_DOMAIN}`)"
+      - "traefik.http.routers.sync-https.service=sync-backend"
+
+      - "traefik.http.services.sync-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.sync-backend.loadbalancer.server.port=8384"
+    networks:
+      - traefik
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  traefik:
+    external: true
