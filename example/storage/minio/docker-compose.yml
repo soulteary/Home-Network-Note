@@ -18,30 +18,28 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik"
-
+      # Traefik 中间件
       - "traefik.http.middlewares.minio-gzip.compress=true"
       - "traefik.http.middlewares.minio-redir-https.redirectScheme.scheme=https"
-
+      # 日常使用
       - "traefik.http.routers.minio-http.entrypoints=http"
       - "traefik.http.routers.minio-http.rule=Host(`${DOCKER_MINIO_HOSTNAME}`)"
-      - "traefik.http.routers.minio-http.middlewares=minio-redir-https"
+      # 根据自己实际情况判断是否要全部自动跳转 HTTPS
+      # - "traefik.http.routers.minio-http.middlewares=minio-redir-https"
       - "traefik.http.routers.minio-http.service=minio-backend"
-
       - "traefik.http.routers.minio-https.middlewares=minio-gzip"
       - "traefik.http.routers.minio-https.entrypoints=https"
       - "traefik.http.routers.minio-https.tls=true"
       - "traefik.http.routers.minio-https.rule=Host(`${DOCKER_MINIO_HOSTNAME}`)"
       - "traefik.http.routers.minio-https.service=minio-backend"
-
+      - "traefik.http.services.minio-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.minio-backend.loadbalancer.server.port=9000"
+      # 管理控制台
       - "traefik.http.routers.minio-admin.middlewares=minio-gzip"
       - "traefik.http.routers.minio-admin.entrypoints=https"
       - "traefik.http.routers.minio-admin.tls=true"
       - "traefik.http.routers.minio-admin.rule=Host(`${DOCKER_MINIO_ADMIN_DOMAIN}`)"
       - "traefik.http.routers.minio-admin.service=minio-admin-backend"
-
-      - "traefik.http.services.minio-backend.loadbalancer.server.scheme=http"
-      - "traefik.http.services.minio-backend.loadbalancer.server.port=9000"
-
       - "traefik.http.services.minio-admin-backend.loadbalancer.server.scheme=http"
       - "traefik.http.services.minio-admin-backend.loadbalancer.server.port=9001"
     extra_hosts:
