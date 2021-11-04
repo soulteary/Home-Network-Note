@@ -1,0 +1,11 @@
+# https://soulteary.com/2021/02/06/how-to-make-and-use-a-self-signed-certificate.html
+version: '2'
+
+services:
+
+  certs-maker:
+    image: soulteary/certs-maker
+    environment:
+      - CERT_DNS=storage.lab.com;*.storage.lab.com;*.console.storage.lab.com;
+    volumes:
+      - ./ssl:/ssl

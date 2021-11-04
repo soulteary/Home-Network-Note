@@ -18,9 +18,9 @@
     [tls.stores]
         [tls.stores.default]
             [tls.stores.default.defaultCertificate]
-            certFile = "/data/ssl/lab.com.crt"
-            keyFile = "/data/ssl/lab.com.key"
+            certFile = "/data/ssl/storage.lab.com.crt"
+            keyFile = "/data/ssl/storage.lab.com.key"
 
   [[tls.certificates]]
-    certFile = "/data/ssl/lab.com.crt"
-    keyFile = "/data/ssl/lab.com.key"
+    certFile = "/data/ssl/storage.lab.com.crt"
+    keyFile = "/data/ssl/storage.lab.com.key"
