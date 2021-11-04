@@ -1,0 +1,60 @@
+version: "3"
+services:
+  minio:
+    image: ${DOCKER_MINIO_IMAGE_NAME}
+    container_name: minio
+    volumes:
+      - ./data/minio/data:/data:z
+    command: minio server /data --console-address 0.0.0.0:9001
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_REGION_NAME=${MINIO_REGION_NAME}
+      - MINIO_BROWSER=${MINIO_BROWSER}
+      - MINIO_BROWSER_REDIRECT_URL=${MINIO_BROWSER_REDIRECT_URL}
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.middlewares.minio-gzip.compress=true"
+      - "traefik.http.middlewares.minio-redir-https.redirectScheme.scheme=https"
+
+      - "traefik.http.routers.minio-http.entrypoints=http"
+      - "traefik.http.routers.minio-http.rule=Host(`${DOCKER_MINIO_HOSTNAME}`)"
+      - "traefik.http.routers.minio-http.middlewares=minio-redir-https"
+      - "traefik.http.routers.minio-http.service=minio-backend"
+
+      - "traefik.http.routers.minio-https.middlewares=minio-gzip"
+      - "traefik.http.routers.minio-https.entrypoints=https"
+      - "traefik.http.routers.minio-https.tls=true"
+      - "traefik.http.routers.minio-https.rule=Host(`${DOCKER_MINIO_HOSTNAME}`)"
+      - "traefik.http.routers.minio-https.service=minio-backend"
+
+      - "traefik.http.routers.minio-admin.middlewares=minio-gzip"
+      - "traefik.http.routers.minio-admin.entrypoints=https"
+      - "traefik.http.routers.minio-admin.tls=true"
+      - "traefik.http.routers.minio-admin.rule=Host(`${DOCKER_MINIO_ADMIN_DOMAIN}`)"
+      - "traefik.http.routers.minio-admin.service=minio-admin-backend"
+
+      - "traefik.http.services.minio-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.minio-backend.loadbalancer.server.port=9000"
+
+      - "traefik.http.services.minio-admin-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.minio-admin-backend.loadbalancer.server.port=9001"
+    extra_hosts:
+      - "${DOCKER_MINIO_HOSTNAME}:0.0.0.0"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 3s
+      retries: 12
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+networks:
+  traefik:
+    external: true

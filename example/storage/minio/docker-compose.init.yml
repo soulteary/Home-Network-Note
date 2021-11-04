@@ -1,0 +1,18 @@
+version: "3"
+services:
+
+  minio-client:
+    image: ${DOCKER_MINIO_CLIENT_IMAGE_NAME}
+    entrypoint: >
+      /bin/sh -c "
+      /usr/bin/mc config host rm local;
+      /usr/bin/mc config host add --quiet --api s3v4 local http://minio:9000 ${MINIO_ROOT_USER} ${MINIO_ROOT_PASSWORD};
+      /usr/bin/mc mb --quiet local/${DEFAULT_S3_UPLOAD_BUCKET_NAME}/;
+      /usr/bin/mc policy set public local/${DEFAULT_S3_UPLOAD_BUCKET_NAME};
+      "
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
