@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  syncthing-exporter:
+    image: ${DOCKER_EXPORTER_IMAGE_NAME}
+    container_name: DOCKER_EXPORTER_HOSTNAME
+    expose:
+      - 9093
+    restart: always
+    environment:
+      SYNCTHING_URI: "http://${DOCKER_SYNCTHING_HOSTNAME}:8384/"
+      SYNCTHING_TOKEN: ${DOCKER_EXPORTER_API_TOKEN}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.sync-exporter-http.entrypoints=http"
+      - "traefik.http.routers.sync-exporter-http.rule=Host(`${DOCKER_EXPORTER_DOMAIN}`)"
+      - "traefik.http.routers.sync-exporter-http.service=sync-exporter-backend"
+
+      - "traefik.http.routers.sync-exporter-https.entrypoints=https"
+      - "traefik.http.routers.sync-exporter-https.tls=true"
+      - "traefik.http.routers.sync-exporter-https.rule=Host(`${DOCKER_EXPORTER_DOMAIN}`)"
+      - "traefik.http.routers.sync-exporter-https.service=sync-exporter-backend"
+
+      - "traefik.http.services.sync-exporter-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.sync-exporter-backend.loadbalancer.server.port=9093"
+    networks:
+      - traefik
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  traefik:
+    external: true
