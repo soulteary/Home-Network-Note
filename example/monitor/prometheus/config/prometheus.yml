@@ -50,6 +50,13 @@ scrape_configs:
     static_configs:
       - targets: ['syncthing-exporter.storage.lab.com']
 
+  - job_name: nextcloud
+    scrape_interval: 10s
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets: ['nextcloud-exporter.storage.lab.com']
+
 # 配置监控报警服务
 alerting:
   alertmanagers:

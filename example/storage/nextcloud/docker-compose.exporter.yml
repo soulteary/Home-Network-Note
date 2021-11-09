@@ -1,0 +1,33 @@
+version: "3.6"
+
+services:
+
+  nextcloud-exporter:
+    image: ${DOCKER_EXPORTER_IMAGE_NAME}
+    restart: always
+    environment:
+      NEXTCLOUD_SERVER: http://${DOCKER_NEXTCLOUD_DOMAIN}
+      NEXTCLOUD_USERNAME: ${DOCKER_EXPORTER_USER}
+      NEXTCLOUD_PASSWORD: ${DOCKER_EXPORTER_PASS}
+      NEXTCLOUD_TIMEOUT: 5s
+    expose:
+      - 9205
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.http-nextcloud-exporter.entrypoints=http"
+      - "traefik.http.routers.http-nextcloud-exporter.rule=Host(`${DOCKER_EXPORTER_DOMAIN}`)"
+      - "traefik.http.routers.nextcloud-exporter.entrypoints=https"
+      - "traefik.http.routers.nextcloud-exporter.tls=true"
+      - "traefik.http.routers.nextcloud-exporter.rule=Host(`${DOCKER_EXPORTER_DOMAIN}`)"
+      - "traefik.http.services.nextcloud-exporter-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.nextcloud-exporter-backend.loadbalancer.server.port=9205"
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+networks:
+  traefik:
+    external: true
