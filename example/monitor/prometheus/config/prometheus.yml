@@ -36,6 +36,14 @@ scrape_configs:
     static_configs:
       - targets: ['pushgateway:9091']
 
+  - job_name: minio
+    scrape_interval: 10s
+    metrics_path: /minio/v2/metrics/cluster
+    scheme: http
+    static_configs:
+    - targets: ['s3.storage.lab.com']
+
+
 # 配置监控报警服务
 alerting:
   alertmanagers:

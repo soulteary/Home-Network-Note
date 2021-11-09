@@ -12,6 +12,7 @@ services:
       - MINIO_REGION_NAME=${MINIO_REGION_NAME}
       - MINIO_BROWSER=${MINIO_BROWSER}
       - MINIO_BROWSER_REDIRECT_URL=${MINIO_BROWSER_REDIRECT_URL}
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
     restart: always
     networks:
       - traefik
