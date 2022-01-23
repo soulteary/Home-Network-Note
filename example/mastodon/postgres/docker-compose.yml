@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  db:
+    restart: always
+    image: postgres:14-alpine
+    shm_size: 256mb
+    networks:
+      - mastodon_networks
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 15s
+      retries: 12
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - "POSTGRES_DB=mastodon"
+      - "POSTGRES_USER=mastodon"
+      - "POSTGRES_PASSWORD=mastodon"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+networks:
+  mastodon_networks:
+    external: true
