@@ -1,0 +1,24 @@
+version: '3'
+services:
+
+  redis:
+    restart: always
+    image: redis:6-alpine
+    networks:
+      - mastodon_networks
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      retries: 12
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+networks:
+  mastodon_networks:
+    external: true
