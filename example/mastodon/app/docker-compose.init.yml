@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       - "RAILS_ENV=production"
-    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rake mastodon:setup"
+    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; tail -f /etc/hosts"
     networks:
       - mastodon_networks
 
