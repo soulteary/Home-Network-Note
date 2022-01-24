@@ -1,0 +1,33 @@
+version: '3'
+services:
+
+  mastodon-assets:
+    image: mastodon-assets
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.middlewares.cors.headers.accessControlAllowMethods=GET,OPTIONS"
+      - "traefik.http.middlewares.cors.headers.accessControlAllowHeaders=*"      
+      - "traefik.http.middlewares.cors.headers.accessControlAllowOriginList=*"
+      - "traefik.http.middlewares.cors.headers.accesscontrolmaxage=100"
+      - "traefik.http.middlewares.cors.headers.addvaryheader=true"
+
+      - "traefik.http.routers.mastodon-assets-http.middlewares=cors@docker"
+      - "traefik.http.routers.mastodon-assets-http.entrypoints=http"
+      - "traefik.http.routers.mastodon-assets-http.rule=Host(`hub-assets.lab.com`)"
+ 
+      - "traefik.http.routers.mastodon-assets-https.middlewares=cors@docker"
+      - "traefik.http.routers.mastodon-assets-https.entrypoints=https"
+      - "traefik.http.routers.mastodon-assets-https.tls=true"
+      - "traefik.http.routers.mastodon-assets-https.rule=Host(`hub-assets.lab.com`)"
+
+      - "traefik.http.services.mastodon-assets-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.mastodon-assets-backend.loadbalancer.server.port=80"
+
+networks:
+  traefik:
+    external: true
