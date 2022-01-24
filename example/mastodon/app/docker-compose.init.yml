@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    image: tootsuite/mastodon:v3.4.4
+    restart: always
+    environment:
+      - "RAILS_ENV=production"
+    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rake mastodon:setup"
+    networks:
+      - mastodon_networks
+
+networks:
+  mastodon_networks:
+    external: true
