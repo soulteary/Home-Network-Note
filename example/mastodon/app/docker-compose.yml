@@ -1,0 +1,79 @@
+version: '3'
+services:
+
+  mastodon-gateway:
+    image: nginx:1.21.4-alpine
+    restart: always
+    networks:
+      - traefik
+      - mastodon_networks
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 15s
+      retries: 12
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.mastodon-nginx-http.entrypoints=http"
+      - "traefik.http.routers.mastodon-nginx-http.rule=Host(`hub.lab.com`)"
+      - "traefik.http.routers.mastodon-nginx-https.entrypoints=https"
+      - "traefik.http.routers.mastodon-nginx-https.tls=true"
+      - "traefik.http.routers.mastodon-nginx-https.rule=Host(`hub.lab.com`)"
+      - "traefik.http.services.mastodon-nginx-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.mastodon-nginx-backend.loadbalancer.server.port=80"
+
+
+  web:
+    image: tootsuite/mastodon:v3.4.4
+    restart: always
+    env_file: .env.production
+    environment:
+      - "RAILS_ENV=production"
+    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -p 3000"
+    networks:
+      - mastodon_networks
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:3000/health || exit 1"]
+      interval: 15s
+      retries: 12
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+
+  streaming:
+    image: tootsuite/mastodon:v3.4.4
+    env_file: .env.production
+    restart: always
+    command: node ./streaming
+    networks:
+      - mastodon_networks
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:4000/api/v1/streaming/health || exit 1"]
+      interval: 15s
+      retries: 12
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - "STREAMING_CLUSTER_NUM=1"
+
+  sidekiq:
+    image: tootsuite/mastodon:v3.4.4
+    env_file: .env.production
+    restart: always
+    command: bundle exec sidekiq
+    networks:
+      - mastodon_networks
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+
+networks:
+  mastodon_networks:
+    external: true
+  traefik:
+    external: true
