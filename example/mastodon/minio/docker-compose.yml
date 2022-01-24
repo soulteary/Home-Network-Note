@@ -1,0 +1,76 @@
+version: "3"
+services:
+
+  nginx-minio:
+    image: nginx:1.21.4-alpine
+    restart: always
+    networks:
+      - traefik
+      - mastodon_networks
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 15s
+      retries: 12
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.mastodon-s3-http.entrypoints=http"
+      - "traefik.http.routers.mastodon-s3-http.rule=Host(`hub-res.lab.com`)"
+      - "traefik.http.routers.mastodon-s3-https.entrypoints=https"
+      - "traefik.http.routers.mastodon-s3-https.tls=true"
+      - "traefik.http.routers.mastodon-s3-https.rule=Host(`hub-res.lab.com`)"
+      - "traefik.http.services.mastodon-s3-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.mastodon-s3-backend.loadbalancer.server.port=80"
+
+  minio:
+    image: ${DOCKER_MINIO_IMAGE_NAME}
+    container_name: ${DOCKER_MINIO_HOSTNAME}
+    volumes:
+      - ./data/minio/data:/data:z
+    command: minio server /data --address 0.0.0.0:80 --listeners 1  --console-address 0.0.0.0:9001
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_REGION_NAME=${MINIO_REGION_NAME}
+      - MINIO_BROWSER=${MINIO_BROWSER}
+      - MINIO_BROWSER_REDIRECT_URL=${MINIO_BROWSER_REDIRECT_URL}
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
+    restart: always
+    networks:
+      - traefik
+      - mastodon_networks
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.middlewares.minio-gzip.compress=true"
+      - "traefik.http.routers.minio-admin.middlewares=minio-gzip"
+      - "traefik.http.routers.minio-admin.entrypoints=https"
+      - "traefik.http.routers.minio-admin.tls=true"
+      - "traefik.http.routers.minio-admin.rule=Host(`${DOCKER_MINIO_ADMIN_DOMAIN}`)"
+      - "traefik.http.routers.minio-admin.service=minio-admin-backend"
+      - "traefik.http.services.minio-admin-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.minio-admin-backend.loadbalancer.server.port=9001"
+    extra_hosts:
+      - "${DOCKER_MINIO_HOSTNAME}:0.0.0.0"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/minio/health/live"]
+      interval: 3s
+      retries: 12
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+networks:
+  mastodon_networks:
+    external: true
+  traefik:
+    external: true
