@@ -33,6 +33,9 @@ services:
     env_file: .env.production
     environment:
       - "RAILS_ENV=production"
+      - "MAX_THREADS=2"
+      - "WEB_CONCURRENCY=1"
+      - "RAILS_SERVE_STATIC_FILES=false"
     command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -p 3000"
     networks:
       - mastodon_networks
@@ -43,6 +46,8 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
+      - ./content_security_policy.rb:/opt/mastodon/config/initializers/content_security_policy.rb:ro
+      - ./s3.rb:/opt/mastodon/vendor/bundle/ruby/2.7.0/gems/paperclip-6.0.0/lib/paperclip/storage/s3.rb
 
   streaming:
     image: tootsuite/mastodon:v3.4.4
@@ -59,7 +64,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
     environment:
+      - "NODE_ENV=production"
       - "STREAMING_CLUSTER_NUM=1"
+ 
 
   sidekiq:
     image: tootsuite/mastodon:v3.4.4
@@ -71,6 +78,11 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
+    healthcheck:
+      test: ["CMD-SHELL", "ps aux | grep '[s]idekiq\ 6' || false"]
+      interval: 15s
+      retries: 12
+
 
 networks:
   mastodon_networks:
