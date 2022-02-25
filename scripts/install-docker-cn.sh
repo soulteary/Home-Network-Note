@@ -6,7 +6,7 @@
 echo "Downloading and installing docker..."
 apt install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL "https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu/gpg" | sudo apt-key add -
-echo "deb https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+add-apt-repository "deb https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian $(lsb_release -cs) stable"
 apt update && apt install -y docker-ce
 docker -v
 echo "Docker Installed."
