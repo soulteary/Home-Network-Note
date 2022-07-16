@@ -142,7 +142,7 @@ func processPipe(src *os.File, dest *os.File, testMode bool) {
 			cidrs, err := getCidrRangeList(ipStart, ipEnd)
 			if err == nil {
 				for _, cidr := range cidrs {
-					fmt.Fprint(dest, cidr)
+					fmt.Fprint(dest, fmt.Sprintf("%s\n", cidr))
 				}
 			}
 		}
