@@ -1,6 +1,6 @@
 🚧 **Under Construction / 持续更新** 🚧
 
-![Project Start in 2014](https://img.shields.io/badge/Project%20Start-2014-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) [![Build Status](https://drone.zheteng.dev/api/badges/soulteary/Home-Network-Note/status.svg)](https://drone.zheteng.dev/soulteary/Home-Network-Note) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
+![Project Start in 2014](https://img.shields.io/badge/Project%20Start-2014-brightgreen?style=flat-square&logo=azuredataexplorer) ![GitHub last commit](https://img.shields.io/github/last-commit/soulteary/Home-Network-Note.svg?label=Last%20Update&style=flat-square&logo=github) ![GitHub](https://img.shields.io/github/license/soulteary/Home-Network-Note.svg?style=flat-square&logo=lichess)
 
 **这几年积累/分享了不少实践内容，是时候把这个项目的坑填上了。**
 
@@ -155,8 +155,8 @@
 | 7 | 平板 | iPad Air2 | 4G / 5G WIFI | 128G (改) | 2015 |
 | 8 | 平板 | iPad Pro 10' ^4 | 5G WIFI | 256G | 2018 |
 | 9 | 平板 | iPad Pro 12' ^4 | 5G WIFI | 256G | 2018 |
-| 10 | 爪机 | iPhone 12 Pro | 5G / 5G WIFI | 512G  | 2020 |
-| 11 | 爪机 | Redmi K30 Pro | 5G / 5G WIFI | 128G  | 2019 |
+| 10 | 爪机 | iPhone 14 Pro | 5G / 5G WIFI | 512G  | 2022 |
+| 11 | 爪机 | Redmi 11T Pro | 5G / 5G WIFI | 256G  | 2022 |
 | 12 | 爪机 | 海信 A7cc | 5G / 5G WIFI | 128G  | 2021 |
 | 13 | 爪机 | iP3GS ^1 | 2G / 2G WIFI | 忽略 | 2017 |
 
@@ -171,8 +171,8 @@
 - [7] 电子相册专用机。
 - [8] 电子笔记 + 电脑副屏 + 王者荣耀专用机。
 - [9] 电子笔记 + 电脑副屏 + 王者荣耀专用机。
-- [10] 为5G网络而换的机器。
-- [11] 为5G网络而换的机器，主要作为导航机器使用。
+- [10] 12Pro 的机器感觉有些卡，恰逢新版本发布，正好升级。
+- [11] 接替 K30Pro，主要作为导航机器使用。
 - [12] 微信读书阅读器，体验很棒。
 - [13] 年度最值手机，作为monitor使用，极低功耗，可以愉快跑脚本，已购两台。
 
