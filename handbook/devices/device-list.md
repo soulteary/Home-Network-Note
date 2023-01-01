@@ -7,6 +7,10 @@
 
 TODO：等待更新
 
+- 2023年 EliteDesk 800G6, (i3 10105T, 16GBRAM)
+- 2022年 Optiplex 3060, (i3 9100T, 8GBRAM)
+- 2022年 MacBook Pro 14inch (2022年, M1 Pro, 32GBRAM)
+- 2020年 MacBook Pro 13inch (2021年，M1, 16GBRAM, Retina)
 - 2020年 MacBook Pro 16inch (2019年，i7 2.6GHz, 16GBRAM, Retina)
 - 2019年 MacBook Pro 16inch (2019年，i9 2.4GHz, 32GBRAM, Retina)
 - 2019年 MacBook Pro 13inch (2019年，i5 2.4GHz, 8GBRAM, Retina)

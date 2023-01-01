@@ -16,7 +16,7 @@
 
 ## 网络性能报告
 
-（网络中存活20+设备，并有下载活动）
+（网络中存活30+设备，并有下载活动）
 
 - [二级网段-5G无线测试](../report/wireless/01.internal-5g-test.md)：平均 37MB/s。
 - [二级网段-2G无线测试](../report/wireless/02.internal-2g-test.md)：平均 5MB/s。
