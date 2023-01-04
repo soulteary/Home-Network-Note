@@ -107,8 +107,8 @@
 | 5 | 资源机器 | Nuc8i5BEH | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
 | 6 | 网络设备 | Nuc7CJYH | 千兆LAN | 8GBRAM / 256GB | 2021 |
 | 7 | 资源机器 | MacBook Pro M2 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
-| 8 | 资源机器 | OptiPlex 3060 | 千兆LAN & 5G Wi-Fi | 8GBRAM / 512GB | 2022 |
-| 9 | 资源机器 | EliteDesk 800G6 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 待插满 | 2023 |
+| 8 | 资源机器 | OptiPlex 3060 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
+| 9 | 资源机器 | EliteDesk 800G6 | 千兆LAN & 5G Wi-Fi | 128GBRAM | 2023 |
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
@@ -120,7 +120,7 @@
 - [6] 将群晖上的容器服务迁移至此，解决群晖跑容器，硬盘不会休眠的问题。同时提供稳定的“回家网络”、部分个人公开 Wiki 资源。
 - [7] 13-inch, M2 公司设备，用来当 Runner 跑 GitHub CI 以及做日常程序运行测试。
 - [8] 暂时用于中转微信消息
-- [9] 计划用于带 Raid 保障的“时间机器”
+- [9] 计划用于带 Raid 保障的“时间机器”，系统准备就绪，等待磁盘。
 
 
 ### 🚚 储存资源
