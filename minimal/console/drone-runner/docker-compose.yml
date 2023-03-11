@@ -1,0 +1,39 @@
+version: "3.6"
+
+services:
+  drone-runner:
+    container_name: ${SERVICE_DOMAIN}
+    image: ${DOCKER_IMAGE}
+    restart: always
+    expose:
+      - 3000
+    environment:
+      - DRONE_DEBUG=true
+      - DRONE_ENV_PLUGIN_SKIP_VERIFY=false
+      - DRONE_TRACE=true
+      - DRONE_RPC_PROTO=http
+      - DRONE_RPC_HOST=${DRONE_SERVER_DOMAIN}
+      - DRONE_RPC_SECRET=${DRONE_RPC_SECRET}
+      - DRONE_RUNNER_CAPACITY=${DRONE_RUNNER_CAPACITY}
+      - DRONE_RUNNER_NAME=${SERVICE_DOMAIN}
+      - DRONE_RUNNER_NETWORKS=traefik
+    networks:
+      - traefik
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+    extra_hosts:
+      - "${SERVICE_DOMAIN}:127.0.0.1"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost:3000/healthz || exit 1"]
+      interval: 5s
+
+networks:
+  traefik:
+    external: true
