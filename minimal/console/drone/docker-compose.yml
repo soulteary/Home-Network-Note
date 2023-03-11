@@ -29,6 +29,7 @@ services:
       - "traefik.http.routers.drone-web.entrypoints=http"
       - "traefik.http.routers.drone-web.rule=Host(`${SERVICE_DOMAIN}`)"
 
+      - "traefik.http.routers.drone-ssl.middlewares=gzip@file,auth"
       - "traefik.http.routers.drone-ssl.entrypoints=https"
       - "traefik.http.routers.drone-ssl.tls=true"
       - "traefik.http.routers.drone-ssl.rule=Host(`${SERVICE_DOMAIN}`)"

@@ -35,6 +35,7 @@ services:
       - "traefik.http.routers.$SERVICE_NAME-web.entrypoints=http"
       - "traefik.http.routers.$SERVICE_NAME-web.rule=Host(`${SERVICE_DOMAIN}`)"
 
+      - "traefik.http.routers.$SERVICE_NAME-ssl.middlewares=gzip@file,auth"
       - "traefik.http.routers.$SERVICE_NAME-ssl.entrypoints=https"
       - "traefik.http.routers.$SERVICE_NAME-ssl.tls=true"
       - "traefik.http.routers.$SERVICE_NAME-ssl.rule=Host(`${SERVICE_DOMAIN}`)"
