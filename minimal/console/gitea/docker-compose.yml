@@ -1,0 +1,61 @@
+version: "3.8"
+
+services:
+  gitea:
+    container_name: ${SERVICE_DOMAIN}
+    image: ${DOCKER_IMAGE}
+    restart: always
+    # 根据需要选择是否暴露服务器端口
+    #ports:
+    #  - ${SSH_PORT_EXPOSE}:22
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      - APP_NAME=${SERVICE_NAME}
+      - RUN_MODE=prod
+      - RUN_USER=git
+      - SSH_DOMAIN=${SERVICE_DOMAIN}
+      - SSH_PORT=22
+      - SSH_LISTEN_PORT=22
+      - HTTP_PORT=80
+      - ROOT_URL=https://${SERVICE_DOMAIN}
+      - LFS_START_SERVER=true
+      - REQUIRE_SIGNIN_VIEW=true
+      - DB_TYPE=sqlite3
+      - INSTALL_LOCK=false
+      - DISABLE_GRAVATAR=true
+      - ALLOW_LOCALNETWORKS=true
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.$SERVICE_NAME-web.middlewares=redir-https@file"
+      - "traefik.http.routers.$SERVICE_NAME-web.entrypoints=http"
+      - "traefik.http.routers.$SERVICE_NAME-web.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.routers.$SERVICE_NAME-ssl.entrypoints=https"
+      - "traefik.http.routers.$SERVICE_NAME-ssl.tls=true"
+      - "traefik.http.routers.$SERVICE_NAME-ssl.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.services.$SERVICE_NAME-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.$SERVICE_NAME-backend.loadbalancer.server.port=80"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./data:/data/
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+    extra_hosts:
+      - "${SERVICE_DOMAIN}:127.0.0.1"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost || exit 1"]
+      interval: 5s
+      retries: 12
+
+networks:
+  traefik:
+    external: true
