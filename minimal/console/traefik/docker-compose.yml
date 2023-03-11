@@ -59,16 +59,16 @@ services:
       - "traefik.docker.network=traefik"
 
       - "traefik.http.routers.traefik-dash-web.tls.certresolver=le"
-      - "traefik.http.routers.traefik-dash-web.tls.domains[0].main=homelab.group"
-      - "traefik.http.routers.traefik-dash-web.tls.domains[0].sans=*.homelab.group,*.console.homelab.group,*.demo.homelab.group"
+      - "traefik.http.routers.traefik-dash-web.tls.domains[0].main=${CF_DNS_MAIN}"
+      - "traefik.http.routers.traefik-dash-web.tls.domains[0].sans=${CF_DNS_LIST}"
 
       - "traefik.http.routers.traefik-dash-web.tls=true"
       - "traefik.http.routers.traefik-dash-web.entrypoints=https"
-      - "traefik.http.routers.traefik-dash-web.rule=Host(`traefik.console.homelab.group`) && PathPrefix(`/`)"
+      - "traefik.http.routers.traefik-dash-web.rule=Host(`${SERVICE_DOMAIN}`)"
       - "traefik.http.routers.traefik-dash-web.service=dashboard@internal"
 
       - "traefik.http.routers.traefik-dash-api.entrypoints=https"
-      - "traefik.http.routers.traefik-dash-api.rule=Host(`traefik.console.homelab.group`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
+      - "traefik.http.routers.traefik-dash-api.rule=Host(`${SERVICE_DOMAIN}`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
       - "traefik.http.routers.traefik-dash-api.tls=true"
       - "traefik.http.routers.traefik-dash-api.service=api@internal"
     healthcheck:
