@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  drone:
+    container_name: ${SERVICE_DOMAIN}
+    image: ${DOCKER_IMAGE}
+    restart: always
+    environment:
+      - DRONE_GITEA_SERVER=http://${GITEA_DOMAIN}
+      - DRONE_GITEA_CLIENT_ID=${DRONE_GITEA_CLIENT_ID}
+      - DRONE_GITEA_CLIENT_SECRET=${DRONE_GITEA_CLIENT_SECRET}
+      - DRONE_LOGS_TRACE=true
+      - DRONE_AGENTS_ENABLED=true
+      - DRONE_RPC_SECRET=${DRONE_RPC_SECRET}
+      - DRONE_SERVER_HOST=${SERVICE_DOMAIN}
+      - DRONE_SERVER_PROTO=http
+      - DRONE_CLEANUP_INTERVAL=60m
+      - DRONE_CLEANUP_DISABLED=false
+      - DRONE_CLEANUP_DEADLINE_RUNNING=1h
+      - DRONE_CLEANUP_DEADLINE_PENDING=2h
+      - DRONE_USER_CREATE=username:${DRONE_ADMIN_USERNAME},admin:true
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.drone-web.middlewares=redir-https@file"
+      - "traefik.http.routers.drone-web.entrypoints=http"
+      - "traefik.http.routers.drone-web.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.routers.drone-ssl.entrypoints=https"
+      - "traefik.http.routers.drone-ssl.tls=true"
+      - "traefik.http.routers.drone-ssl.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.services.drone-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.drone-backend.loadbalancer.server.port=80"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+    extra_hosts:
+      - "${SERVICE_DOMAIN}:127.0.0.1"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost:80/healthz || exit 1"]
+      interval: 5s
+
+networks:
+  traefik:
+    external: true
