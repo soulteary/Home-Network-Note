@@ -1,0 +1,23 @@
+# 提供 Gzip 压缩
+[http.middlewares.gzip.compress]
+
+# 独立协议跳转规则
+[http.middlewares.redir-https.redirectScheme]
+  scheme = "https"
+# 兼容一些旧的配置，确认没有使用则可以删除
+[http.middlewares.https-redirect.redirectScheme]
+  scheme = "https"
+
+# 定义一个空服务，用于一些特殊场景
+[http.services]
+  [http.services.noop.LoadBalancer]
+     [[http.services.noop.LoadBalancer.servers]]
+        url = "" # or url = "localhost"
+
+# 定义一个简单的 BA 验证
+[http.middlewares.common-auth.basicAuth]
+  users = [
+    # htpasswd -nb your-user-name your-pass-word
+    "your-user-name:$shdsdfiuysdiufywiuhreiwhf.",
+  ]
+  removeheader = true
