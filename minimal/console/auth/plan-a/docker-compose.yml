@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+  sso-server2:
+    image: ${DOCKER_SSO_IMAGE_NAME}
+    container_name: ${DOCKER_SSO_HOSTNAME}
+    restart: always
+    expose:
+      - 80
+    command: ./main
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./license.txt:/license.txt:ro
+    extra_hosts:
+      - "${SSO_SERVER_DOMAIN}:0.0.0.0"
+    networks:
+      - traefik
+    environment:
+      - TZ=Asia/Shanghai
+      - PORT=80
+      - SESSION_SECRET=${SESSION_SECRET:-}
+      - SERVER_NAME=${SSO_SERVER_NAME:-}
+      - CLIENT_NAME=${SSO_CLIENT_NAME:-}
+      - CLIENT_ID=${SSO_CLIENT_ID:-}
+      - CLIENT_SECRET=${SSO_CLIENT_SECRET:-}
+      - CLIENT_ISTRUSTED=${SSO_CLIENT_ISTRUSTED:-}
+      - USER_PASS=${SSO_USER_PASS:-}
+      - LICENSE=${LICENSE:-}
+      - LICENSE_FILE=${LICENSE_FILE:-}
+      - OTP_OPTION=${OTP_OPTION:-}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.sso-http.entrypoints=http"
+      - "traefik.http.routers.sso-http.rule=Host(`$SSO_SERVER_DOMAIN`)"
+
+      - "traefik.http.routers.sso-https.entrypoints=https"
+      - "traefik.http.routers.sso-https.tls=true"
+      - "traefik.http.routers.sso-https.rule=Host(`$SSO_SERVER_DOMAIN`)"
+
+      - "traefik.http.services.sso-backend2.loadbalancer.server.scheme=http"
+      - "traefik.http.services.sso-backend2.loadbalancer.server.port=80"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:80/health"]
+      interval: 3s
+      retries: 12
+
+networks:
+  traefik:
+    external: true
