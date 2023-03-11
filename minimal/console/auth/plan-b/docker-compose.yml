@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  traefik-moon:
+    image: ${DOCKER_SSO_IMAGE_NAME}
+    container_name: ${DOCKER_SSO_HOSTNAME}
+    restart: always
+    expose:
+      - 80
+    environment:
+      - TZ=Asia/Shanghai
+      - AUTH_HOST=${DOCKER_SSO_HOSTNAME}
+      - PASSWORDS=${PASSWORDS}
+      - TOKEN=ganbei
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./license.txt:/license.txt:ro
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.$SERVICE_NAME-web.middlewares=redir-https@file"
+      - "traefik.http.routers.$SERVICE_NAME-web.entrypoints=http"
+      - "traefik.http.routers.$SERVICE_NAME-web.rule=Host(`${DOCKER_SSO_HOSTNAME}`)"
+
+      - "traefik.http.routers.$SERVICE_NAME.entrypoints=https"
+      - "traefik.http.routers.$SERVICE_NAME.tls=true"
+      - "traefik.http.routers.$SERVICE_NAME.rule=Host(`${DOCKER_SSO_HOSTNAME}`) || Path(`/_session_exchange`)"
+      - "traefik.http.middlewares.$SERVICE_NAME.forwardauth.address=http://${DOCKER_SSO_HOSTNAME}/_auth"
+    extra_hosts:
+      - "${DOCKER_SSO_HOSTNAME}:0.0.0.0"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:80/_health"]
+      interval: 3s
+      retries: 12
+
+networks:
+  traefik:
+    external: true
