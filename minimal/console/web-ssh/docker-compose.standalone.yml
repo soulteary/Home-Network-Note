@@ -14,3 +14,6 @@ services:
       - /tmp/ttyd.sock:/tmp/ttyd.sock:rw
     environment:
       - NGINX_ENTRYPOINT_QUIET_LOGS=1
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:80/health || exit 1"]
+      interval: 5s

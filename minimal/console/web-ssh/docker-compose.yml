@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  nginx-ssh:
+    image: ${DOCKER_IMAGE}
+    container_name: ${SERVICE_DOMAIN}
+    restart: always
+    expose:
+      - 80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./.htpasswd:/etc/.htpasswd
+      - /tmp/ttyd.sock:/tmp/ttyd.sock:rw
+    environment:
+      - NGINX_ENTRYPOINT_QUIET_LOGS=1
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.routers.web-ssh-web.middlewares=redir-https@file"
+      - "traefik.http.routers.web-ssh-web.entrypoints=http"
+      - "traefik.http.routers.web-ssh-web.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.routers.web-ssh-ssl.middlewares=gzip@file,auth"
+      - "traefik.http.routers.web-ssh-ssl.entrypoints=https"
+      - "traefik.http.routers.web-ssh-ssl.tls=true"
+      - "traefik.http.routers.web-ssh-ssl.rule=Host(`${SERVICE_DOMAIN}`)"
+
+      - "traefik.http.services.web-ssh-backend.loadbalancer.server.scheme=http"
+      - "traefik.http.services.web-ssh-backend.loadbalancer.server.port=80"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+    extra_hosts:
+      - "${SERVICE_DOMAIN}:127.0.0.1"
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:80/health || exit 1"]
+      interval: 5s
+
+networks:
+  traefik:
+    external: true
