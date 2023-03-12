@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nginx-ssh:
+    image: nginx:1.23.3
+    restart: always
+    ports:
+      - 0.0.0.0:8080:80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./.htpasswd:/etc/.htpasswd
+      - /tmp/ttyd.sock:/tmp/ttyd.sock:rw
+    environment:
+      - NGINX_ENTRYPOINT_QUIET_LOGS=1
