@@ -1,0 +1,81 @@
+version: "3"
+
+services:
+  traefik:
+    image: traefik:v3.0.0-beta3
+    restart: always
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
+    command:
+      - "--global.sendanonymoususage=false"
+      - "--global.checknewversion=false"
+      - "--api=true"
+      - "--api.dashboard=true"
+      - "--api.insecure=true"
+      - "--api.debug=false"
+      - "--ping=true"
+      - "--log.level=INFO"
+      - "--log.format=common"
+      - "--accesslog=false"
+      - "--entrypoints.http.address=:80"
+      - "--entrypoints.https.address=:443"
+      - "--providers.docker=true"
+      - "--providers.docker.watch=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.endpoint=unix:///var/run/docker.sock"
+      - "--providers.docker.useBindPortIP=false"
+      - "--providers.docker.network=traefik"
+      - "--providers.file=true"
+      - "--providers.file.watch=true"
+      - "--providers.file.directory=/etc/traefik/config"
+      - "--providers.file.debugloggeneratedtemplate=true"
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+
+      - "traefik.http.middlewares.gzip.compress=true"
+      - "traefik.http.middlewares.redir-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redir-https.redirectscheme.permanent=false"
+
+      - "traefik.http.routers.traefik-dashboard.middlewares=redir-https@docker"
+      - "traefik.http.routers.traefik-dashboard-secure.middlewares=gzip@docker"
+      - "traefik.http.routers.traefik-dashboard-api-secure.middlewares=gzip@docker"
+
+      - "traefik.http.routers.traefik-dashboard.entrypoints=http"
+      - "traefik.http.routers.traefik-dashboard.rule=Host(`traefik.console.lab.io`)"
+      - "traefik.http.routers.traefik-dashboard.service=noop@internal"
+
+      - "traefik.http.routers.traefik-dashboard-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-dashboard-secure.tls=true"
+      - "traefik.http.routers.traefik-dashboard-secure.rule=Host(`traefik.console.lab.io`)"
+      - "traefik.http.routers.traefik-dashboard-secure.service=dashboard@internal"
+
+      - "traefik.http.routers.traefik-dashboard-api-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-dashboard-api-secure.tls=true"
+      - "traefik.http.routers.traefik-dashboard-api-secure.rule=Host(`traefik.console.lab.io`) && PathPrefix(`/api`)"
+      - "traefik.http.routers.traefik-dashboard-api-secure.service=api@internal"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./certs/:/certs/:ro
+      - ./config/:/etc/traefik/config/:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost:8080/ping || exit 1"]
+      interval: 3s
+      retries: 10
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  traefik:
+    external: true

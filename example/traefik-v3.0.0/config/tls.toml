@@ -1,0 +1,22 @@
+[tls]
+  [tls.options.default]
+  minVersion = "VersionTLS12"
+  sniStrict = true
+  cipherSuites = [
+    # TLS 1.3
+    "TLS_AES_128_GCM_SHA256",
+    "TLS_AES_256_GCM_SHA384",
+    "TLS_CHACHA20_POLY1305_SHA256",
+    # TLS 1.2
+    "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+    "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+  ]
+
+  [tls.stores.default.defaultCertificate]
+  certFile = "/certs/lab.io.crt"
+  keyFile = "/certs/lab.io.key"
+
+  [[tls.certificates]]
+  certFile = "/certs/lab.io.crt"
+  keyFile = "/certs/lab.io.key"
