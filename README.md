@@ -197,6 +197,19 @@
 - [官方设备规格链接](https://item.lenovo.com.cn/product/1026169.html)
 
 
+### Mac Pro (2013) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+
+> 为 128GB ECC RAM、高颜值、长期密集运算准备的设备。
+
+![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel E5-2697v2](https://img.shields.io/badge/CPU-Intel%20E5--2697v2%20(12%24cores,%202.7GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:AMD FirePro D300](https://img.shields.io/badge/GPU-AMD%20FirePro%20D300x2%20(4GB)-brightgreen?style=flat-square&logo=amd) ![RAM:128G](https://img.shields.io/badge/RAM-128GB%20(ECC)-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比前两年的设备也毫不逊色。唯一缺点，相对功耗较高。
+
+- [官方设备规格链接](https://support.apple.com/kb/SP697?viewlocale=zh_CN&locale=zh_CN)
+- 相关文章记录
+    - 《[廉价的家庭工作站设备改造记录：苹果垃圾桶（Mac Pro 2013）](https://soulteary.com/2023/02/04/cheap-home-workstation-solution-mac-pro-2013.html.html)》。
+
+
 ### HP EliteDesk 800G6 ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
 > 目前已重置，待重新投入使用。
@@ -211,12 +224,8 @@
     - 《[低成本搭建一台 Unraid 家庭存储服务器：中篇](https://soulteary.com/2023/01/21/building-a-home-unraid-storage-server-at-low-cost-part-two.html)》
 
 
-
-
-
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
-- [9] 计划用于带 Raid 保障的“时间机器”，[廉价的家庭工作站设备改造记录：苹果垃圾桶（Mac Pro 2013）](https://soulteary.com/2023/02/04/cheap-home-workstation-solution-mac-pro-2013.html.html)。
 
 
 ### 🚚 储存资源
