@@ -168,18 +168,26 @@
 - 相关文章记录
     - 《[NUC7 一台并不弱的 Mini PC](https://soulteary.com/2021/10/19/nuc7-a-mini-pc-that-is-not-weak.html)》
 
+### MacBook Pro M2 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
+
+> 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
+
+![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20Apple%20M2-brightgreen?style=flat-square&logo=apple) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+- [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
+- 相关文章记录
+    - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
+
 
 
 | 序号 | 使用场景 | 主机名称 | 机器特点 | 设备资源 | 启用时间 |
 | --- | --- | --- | --- | --- | --- |
-| 7 | 资源机器 | MacBook Pro M2 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
 | 8 | 资源机器 | OptiPlex 3060 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
 | 9 | 资源机器 | EliteDesk 800G6 | 千兆LAN & 5G Wi-Fi | 128GBRAM | 2023 |
 | 10 | 资源机器 | Lenovo 9000K | 千兆LAN & 5G Wi-Fi | 64GBRAM | 2023 |
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
-- [7] 13-inch, M2 公司设备，用来当 Runner 跑 GitHub CI 以及做日常程序运行测试。
 - [8] 暂时用于中转微信消息
 - [9] 计划用于带 Raid 保障的“时间机器”，[廉价的家庭工作站设备改造记录：苹果垃圾桶（Mac Pro 2013）](https://soulteary.com/2023/02/04/cheap-home-workstation-solution-mac-pro-2013.html.html)。
 - [10] 机器性能不错（i9-13900KF RTX4090），不过风扇声音稍大。
