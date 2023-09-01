@@ -186,6 +186,16 @@
 
 已重置，待重新投入使用。
 
+### Lenovo 9000K ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+
+> 目前已重置，待重新投入使用。
+
+![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-23.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I9-13900KF](https://img.shields.io/badge/CPU-Intel%20I9%2013900KF(24C32T,%203.0GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:Nvidia 4090](https://img.shields.io/badge/GPU-Nvidia%204090%20(24GB)-brightgreen?style=flat-square&logo=nvidia) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+机器性能不错，用来做本地模型验证。
+
+- [官方设备规格链接](https://item.lenovo.com.cn/product/1026169.html)
+
 
 ### HP EliteDesk 800G6 ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
@@ -203,14 +213,10 @@
 
 
 
-| 序号 | 使用场景 | 主机名称 | 机器特点 | 设备资源 | 启用时间 |
-| --- | --- | --- | --- | --- | --- |
-| 10 | 资源机器 | Lenovo 9000K | 千兆LAN & 5G Wi-Fi | 64GBRAM | 2023 |
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
 - [9] 计划用于带 Raid 保障的“时间机器”，[廉价的家庭工作站设备改造记录：苹果垃圾桶（Mac Pro 2013）](https://soulteary.com/2023/02/04/cheap-home-workstation-solution-mac-pro-2013.html.html)。
-- [10] 机器性能不错（i9-13900KF RTX4090），不过风扇声音稍大。
 
 
 ### 🚚 储存资源
