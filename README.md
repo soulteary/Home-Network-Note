@@ -187,9 +187,24 @@
 已重置，待重新投入使用。
 
 
+### HP EliteDesk 800G6 ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+
+> 目前已重置，待重新投入使用。
+
+![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:8G](https://img.shields.io/badge/RAM-8GB-brightgreen?style=flat-square) ![Disk:0GB](https://img.shields.io/badge/Disk-0GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+已重置，待重新投入使用。
+
+- [官方设备规格链接](https://h20195.www2.hp.com/v2/getpdf.aspx/c06648254.pdf)
+- 相关文章记录
+    - 《[低成本搭建一台家庭存储服务器：前篇](https://soulteary.com/2023/01/15/building-a-home-storage-server-at-low-cost-part-one.html)》
+    - 《[低成本搭建一台 Unraid 家庭存储服务器：中篇](https://soulteary.com/2023/01/21/building-a-home-unraid-storage-server-at-low-cost-part-two.html)》
+
+
+
+
 | 序号 | 使用场景 | 主机名称 | 机器特点 | 设备资源 | 启用时间 |
 | --- | --- | --- | --- | --- | --- |
-| 9 | 资源机器 | EliteDesk 800G6 | 千兆LAN & 5G Wi-Fi | 128GBRAM | 2023 |
 | 10 | 资源机器 | Lenovo 9000K | 千兆LAN & 5G Wi-Fi | 64GBRAM | 2023 |
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
