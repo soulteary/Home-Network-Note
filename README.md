@@ -53,7 +53,7 @@
 - [无线网络方案及性能数据](./handbook/network/wifi-topology.md)
 - [有线网络方案及性能数据](./handbook/network/lan-topology.md)
 
-### 🌈 宽带资源
+## 🌈 宽带资源
 
 > 不敢想假如家里没有稳定的网络会怎样
 
@@ -71,7 +71,7 @@
 - [3] 个人体验原因，已停用移动电话卡，取消原本无线三网接入。
 
 
-### ⭐️ 路由网关
+## ⭐️ 路由网关
 
 > 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](./handbook/devices/device-list.md)。
 
@@ -94,16 +94,46 @@
 - [6] 此插座自带一个简易的热点 WiFi 功能，如果你需要插上设备就自动组网，可以使用上面的设备，如果你没有自动组网等需求，那么这个能让你上网的插座，用起来体验还不错，唯一槽点，插座本身发热比较严重，或许对网络稳定性/质量有一定影响。
 
 
-### 💻 主机资源
+## 💻 主机资源
 
 > 提供运算能力的本地设备，[历史设备见文档](./handbook/devices/device-list.md)。
 
-| 序号 | 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
+### [MacBook Pro (16-inch, 2019)](#) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square)
+
+> 目前使用最久的一台 MacBook 笔记本。
+
+![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I9-9980HK](https://img.shields.io/badge/CPU-Intel%20I9--9980HK%20(8%20cores,%202.4GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:AMD Radeon Pro 5500M](https://img.shields.io/badge/GPU-AMD%20Radeon%20Pro%205500M%20(8GB)-brightgreen?style=flat-square&logo=amd) ![RAM:32G](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+在 Apple 停止生产 Intel 芯片的 MacBook Pro 后，虽然也有使用 M1/M2 芯片的 MacBook Pro，但敲字的主力机一直是这台 Intel 设备。
+
+这台设备在 19 年首发时入手，改良后的第一代蝶式键盘，让我告别了之前频繁去“苹果售后”清理键盘中的猫毛，恢复键盘失灵的问题。
+
+这台设备的性能让我非常满意，实测性能比同为 16 寸，但是搭载 i7 2.6GHz CPU 的设备性能足足高了 20～30%。
+
+- [官方设备规格链接](https://support.apple.com/kb/SP809?locale=zh_CN)
+- 相关文章记录
+    - 《[那些名为 Pro 的设备们 - MacBook Pro 16inch：终于等到你](https://soulteary.com/2019/12/21/my-devices-named-pro-in-2019.html#macbook-pro-16inch%E7%BB%88%E4%BA%8E%E7%AD%89%E5%88%B0%E4%BD%A0)》
+    - 《[MacBook 与其他设备的低成本高性能数据传输方案（一）](https://soulteary.com/2023/01/01/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices.html)》
+    - 《[MacBook 与其他设备的低成本高性能数据传输方案（二）](https://soulteary.com/2023/01/03/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices-part-2.html)》
+
+### [ThinkPad L14 Gen 1 (AMD)](#) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
+
+![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:AMD Zen2 4750u](https://img.shields.io/badge/CPU-AMD%20Zen2%204750u(8C16T,%201.7GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+之前一直在寻找核心数多、功耗低、支持 64GB 内存、相对便携的无显卡笔记本设备，以做“廉价的服务器”使用，并替代早先时候购置的 [HP EliteDesk G4 800](./handbook/devices/HP-EliteDesk-G4-800.md) 小型工作站，直到遇到了搭载 AMD Zen2 4750u 的 ThinkPad L14。
+
+这台设备满载仅 45w 的功耗，性能极强，核心数也非常多，特别适合长时间跑容器服务，来扩展本地的计算资源。美中不足的是，设备只有一条固态硬盘插槽可用。
+
+2022年，设备价格进一步下降，增加了一台相同 CPU 配置的新设备作为冗余资源（32G/1TB）。
+
+- [官方设备规格链接](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_L14_Gen_1_AMD/ThinkPad_L14_Gen_1_AMD_Spec.pdf)
+- 相关文章记录
+    - 《[廉价的家用工作站方案：前篇](https://soulteary.com/2021/07/02/cheap-home-workstation-solution-part-one.html)》
+    - 《[AMD 4750u 及 5800u 笔记本安装 Ubuntu 20.04](https://soulteary.com/2021/07/04/install-ubuntu-20-04-on-amd-4750u-and-5800u-laptops.html)》
+
+
+| 序号 | 使用场景 | 主机名称 | 机器特点 | 设备资源 | 启用时间 |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 编码机器 | MacBook Pro 16 | 千兆LAN & 5G Wi-Fi | 32GBRAM / 2T  | 2019 |
-| 2 | 资源机器 | ThinkBook 15 | 千兆LAN & 5G Wi-Fi | 40GBRAM / 2T  | 2021 |
-| 3 | 资源机器 | ThinkPad L14 | 千兆LAN & 5G Wi-Fi | 64GBRAM / 1T  | 2021 |
-| 4 | 资源机器 | ThinkPad L14 | 千兆LAN & 5G Wi-Fi | 64GBRAM / 1T  | 2022 |
 | 5 | 资源机器 | Nuc8i5BEH | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
 | 6 | 网络设备 | Nuc7CJYH | 千兆LAN | 8GBRAM / 256GB | 2021 |
 | 7 | 资源机器 | MacBook Pro M2 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
@@ -113,10 +143,6 @@
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
-- [1] 在 19 年首发入手，这款键盘相比较之前有巨大改善，缓解了养宠物的我需要不定时访问“苹果售后”清理键盘中的猫毛的问题，性能也让我非常满意，比公司配备的16寸i7 2.6GHz设备性能足足高了 20～30%。
-- [2] 无独显版本，搭载 7nm Zen3 5800u，性能彪悍，作为补充资源机器购置。
-- [3] 无独显版本，搭载 7nm Zen2 4750u 仅 45w 峰值功耗，性能非常强，核心数也非常多，作为一台便携的“服务器”使用，用于拓展本地开发资源，提供一个冗余一些的资源跑测试服务，替换之前使用的 [HP EliteDesk G4 800](./handbook/devices/HP-EliteDesk-G4-800.md) 小型工作站。
-- [4] 2022年补充了一台好用不贵的机器。
 - [5] 入手原因见[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)。在随后不断添置和更新设备后，这台设备职能更新为软件测试资源，提供搭建各种开源软件分布式环境场景所使用的虚拟机环境，极大的降低了笔记本发热的程度。
 - [6] 将群晖上的容器服务迁移至此，解决群晖跑容器，硬盘不会休眠的问题。同时提供稳定的“回家网络”、部分个人公开 Wiki 资源。
 - [7] 13-inch, M2 公司设备，用来当 Runner 跑 GitHub CI 以及做日常程序运行测试。
