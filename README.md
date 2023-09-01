@@ -98,7 +98,7 @@
 
 > 提供运算能力的本地设备，[历史设备见文档](./handbook/devices/device-list.md)。
 
-### [MacBook Pro (16-inch, 2019)](#) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square)
+### MacBook Pro (16-inch, 2019) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square)
 
 > 目前使用最久的一台 MacBook 笔记本。
 
@@ -116,7 +116,7 @@
     - 《[MacBook 与其他设备的低成本高性能数据传输方案（一）](https://soulteary.com/2023/01/01/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices.html)》
     - 《[MacBook 与其他设备的低成本高性能数据传输方案（二）](https://soulteary.com/2023/01/03/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices-part-2.html)》
 
-### [ThinkPad L14 Gen 1 (AMD)](#) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
+### ThinkPad L14 Gen 1 (AMD) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
 
 ![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:AMD Zen2 4750u](https://img.shields.io/badge/CPU-AMD%20Zen2%204750u(8C16T,%201.7GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
@@ -130,11 +130,29 @@
 - 相关文章记录
     - 《[廉价的家用工作站方案：前篇](https://soulteary.com/2021/07/02/cheap-home-workstation-solution-part-one.html)》
     - 《[AMD 4750u 及 5800u 笔记本安装 Ubuntu 20.04](https://soulteary.com/2021/07/04/install-ubuntu-20-04-on-amd-4750u-and-5800u-laptops.html)》
+- 同宗同源，但已出掉的 5800u (ThinkBook 15)
+    - 《[AMD 5800u 笔记本折腾 Proxmox VE 7.0 虚拟化](https://soulteary.com/2021/10/23/amd-5800u-notebook-toss-proxmox-ve-7-0-virtualization.html)》、《[装在笔记本里的私有云环境：准备篇](https://soulteary.com/2021/10/28/private-cloud-environment-installed-in-a-notebook-preparation.html)》、《[装在笔记本里的私有云环境：监控篇](https://soulteary.com/2021/10/30/private-cloud-environment-installed-in-a-notebook-monitor.html)]》、《[装在笔记本里的私有云环境：网络存储篇（上）](https://soulteary.com/2021/11/04/private-cloud-environment-installed-in-a-notebook-storage-part-1.html)》、 《[装在笔记本里的私有云环境：网络存储篇（中）](https://soulteary.com/2021/11/09/private-cloud-environment-installed-in-a-notebook-storage-part-2.html)》、 《[装在笔记本里的私有云环境：K8s 集群准备](https://soulteary.com/2022/11/29/private-cloud-environment-installed-in-a-notebook-k8s-cluster-preparation.html)》
+
+
+### Intel NUC8i5BEH ![Turn On:2021](https://img.shields.io/badge/Turn%20On-2021-brightgreen?style=flat-square)
+
+![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I5-8259U](https://img.shields.io/badge/CPU-Intel%20I5%208259U(4C8T,%202.3GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+最初的入手原因见[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)，随后在不断添置和更新新设备后，这台设备在职能转变为了一台安装了 ESXi 的编写虚拟机“母鸡”，支持了大量开源软件、尤其是具备分布式使用场景的软件的构建和部署测试相关的工作，极大的解放和降低了我的那台动不动就会风扇喧嚣起来的 Intel 芯片的 MacBook。
+
+随着设备越来越多，虚拟化相关的任务不再需要它执行，目前它变回了一台 “Apple TV”，安静的放在真正的 Apple TV 旁边，为我能够看到视频网站弹幕继续做出它的贡献。
+
+- [官方设备规格链接](https://ark.intel.com/content/www/cn/zh/ark/products/126148/intel-nuc-kit-nuc8i5beh.html)
+- 相关文章记录
+    - 《[NUC 折腾笔记 - Linux 系统篇](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)》
+    - 《[NUC 折腾笔记 - 储存能力测试](https://soulteary.com/2021/02/02/nuc-notes-storage-ability-test.html)》
+    - 《[NUC 折腾笔记 - 安装 ESXi 7](https://soulteary.com/2021/06/22/nuc-notes-install-esxi7.html)》
+    - 《[近期家用设备（NUC、猫盘、路由器）散热升级记录](https://soulteary.com/2021/10/14/recent-heat-dissipation-upgrade-record-of-homelab.html#%E6%9B%B4%E6%8D%A2-nuc8-%E7%9A%84%E6%9C%BA%E7%AE%B1%E5%92%8C%E9%A3%8E%E6%89%87)》
+
 
 
 | 序号 | 使用场景 | 主机名称 | 机器特点 | 设备资源 | 启用时间 |
 | --- | --- | --- | --- | --- | --- |
-| 5 | 资源机器 | Nuc8i5BEH | 千兆LAN / 5G Wi-Fi | 64GBRAM / 2T  | 2021 |
 | 6 | 网络设备 | Nuc7CJYH | 千兆LAN | 8GBRAM / 256GB | 2021 |
 | 7 | 资源机器 | MacBook Pro M2 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
 | 8 | 资源机器 | OptiPlex 3060 | 千兆LAN & 5G Wi-Fi | 16GBRAM / 512GB | 2022 |
@@ -143,7 +161,6 @@
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
-- [5] 入手原因见[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)。在随后不断添置和更新设备后，这台设备职能更新为软件测试资源，提供搭建各种开源软件分布式环境场景所使用的虚拟机环境，极大的降低了笔记本发热的程度。
 - [6] 将群晖上的容器服务迁移至此，解决群晖跑容器，硬盘不会休眠的问题。同时提供稳定的“回家网络”、部分个人公开 Wiki 资源。
 - [7] 13-inch, M2 公司设备，用来当 Runner 跑 GitHub CI 以及做日常程序运行测试。
 - [8] 暂时用于中转微信消息
