@@ -153,16 +153,9 @@
     - 《[NUC 折腾笔记 - 安装 ESXi 7](https://soulteary.com/2021/06/22/nuc-notes-install-esxi7.html)》
     - 《[近期家用设备（NUC、猫盘、路由器）散热升级记录](https://soulteary.com/2021/10/14/recent-heat-dissipation-upgrade-record-of-homelab.html#%E6%9B%B4%E6%8D%A2-nuc8-%E7%9A%84%E6%9C%BA%E7%AE%B1%E5%92%8C%E9%A3%8E%E6%89%87)》
 
-
-### Intel NUC7CJYH ![Turn On:2021](https://img.shields.io/badge/Turn%20On-2021-brightgreen?style=flat-square)
-
-> 小而强大，跑过许多服务，目前正在作为 Ubuntu 稳定 RDP 服务验证环境
-
-![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel Celeron J4005](https://img.shields.io/badge/CPU-Intel%20Celeron%20J4005(2C2T,%202.0GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:8G](https://img.shields.io/badge/RAM-8GB-brightgreen?style=flat-square) ![Disk:256GB](https://img.shields.io/badge/Disk-256GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+> 相同设计风格的、曾经用于跑多种服务的 **Intel NUC7CJYH (2021 购入)**，已经转手群友。
 
 2021 年，决定让群晖专注存储，将群晖上运行的容器都迁移到过这台小机器。在解决了群晖的硬盘因为跑容器，出现的勤奋运转绝不休眠的问题后，在这台机器上搭建和运行了两年个人 Wiki。
-
-目前在作为 Ubuntu 远程桌面测试环境，为方案稳定性做可靠性验证。
 
 - [官方设备规格链接](https://www.intel.cn/content/www/cn/zh/products/sku/126135/intel-nuc-kit-nuc7cjyh/specifications.html)
 - 相关文章记录
@@ -180,11 +173,11 @@
 
 ### Dell OptiPlex 3060 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
 
-> 目前已重置，待重新投入使用。
+> 重新建设中，用于获取和处理各种 RSS 信息。
 
-![Windows:11](https://img.shields.io/badge/Windows-11-brightgreen?style=flat-square&logo=microsoft) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![ESXi:6.7u3](https://img.shields.io/badge/ESXi-6.7u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![Windows:11](https://img.shields.io/badge/Windows-11-brightgreen?style=flat-square&logo=microsoft) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
-已重置，待重新投入使用。
+重新建设中，用于获取和处理各种 RSS 信息。
 
 ### Lenovo 9000K ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
@@ -212,9 +205,9 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 
 ### HP EliteDesk 800G6 ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
-> 目前已重置，待重新投入使用。
+> 使用各种淘汰硬件重置的另外一台全闪存 NAS。
 
-![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:8G](https://img.shields.io/badge/RAM-8GB-brightgreen?style=flat-square) ![Disk:0GB](https://img.shields.io/badge/Disk-0GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![ESXi:7.0u3](https://img.shields.io/badge/ESXi-7.0u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![Windows:10](https://img.shields.io/badge/Windows-1--brightgreen?style=flat-square&logo=microsoft) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:32G](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:5.5TB](https://img.shields.io/badge/Disk-5.5TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 已重置，待重新投入使用。
 
@@ -222,6 +215,7 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - 相关文章记录
     - 《[低成本搭建一台家庭存储服务器：前篇](https://soulteary.com/2023/01/15/building-a-home-storage-server-at-low-cost-part-one.html)》
     - 《[低成本搭建一台 Unraid 家庭存储服务器：中篇](https://soulteary.com/2023/01/21/building-a-home-unraid-storage-server-at-low-cost-part-two.html)》
+    - 《[低成本搭建一台家庭存储服务器：全闪存篇](https://soulteary.com/2023/09/17/building-a-home-storage-server-at-low-cost-part-pure-flash.html)》
 
 
 
@@ -229,14 +223,14 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 
 > 构建桌面全闪存 NAS / DAS 的准系统主机。
 
-![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I5-9300H](https://img.shields.io/badge/CPU-Intel%20I5%209300H(4C8T,%202.4GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:1TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:2000M](https://img.shields.io/badge/LAN-2000M-brightgreen?style=flat-square) ![WiFi:6](https://img.shields.io/badge/WiFi-6-brightgreen?style=flat-square) ![thunderbolt:3](https://img.shields.io/badge/Thunderbolt-3%20x2-brightgreen?style=flat-square)
+![ESXi:7.0u3](https://img.shields.io/badge/ESXi-7.0u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I5-9300H](https://img.shields.io/badge/CPU-Intel%20I5%209300H(4C8T,%202.4GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:2000M](https://img.shields.io/badge/LAN-2000M-brightgreen?style=flat-square) ![WiFi:6](https://img.shields.io/badge/WiFi-6-brightgreen?style=flat-square) ![thunderbolt:3](https://img.shields.io/badge/Thunderbolt-3%20x2-brightgreen?style=flat-square)
 
 这台设备入手原因见[这篇文章](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)，目前正在使用它进行全闪存雷电 NAS 的搭建。
 
 - [官方设备规格链接](https://ark.intel.com/content/www/us/en/ark/products/190104/intel-nuc-9-extreme-kit-nuc9i5qnx.html)
 - 相关文章记录
-    - 《[廉价的全闪存雷电 NAS 折腾笔记：组网方案的选择](https://soulteary.com/2023/09/12/cheap-pure-flash-thunderbolt-nas-tossing-notes-nuc9-operating-system-pitfalls.html)》
     - 《[廉价的全闪存雷电 NAS 折腾笔记：组网方案的选择](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)》
+    - 《[廉价的全闪存雷电 NAS 折腾笔记：NUC9 操作系统踩坑](https://soulteary.com/2023/09/12/cheap-pure-flash-thunderbolt-nas-tossing-notes-nuc9-operating-system-pitfalls.html)》
 
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
@@ -264,6 +258,8 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - [4] 干掉持久化的纸质存储，最靠谱的莫过于加密级别的粉碎了，尤其是相对隐私敏感的内容。
 - [5] 在所有电源都带稳流稳压作用后，添加一台UPS可以进一步防止市电闪断带来的数据损坏或者写输出脏掉的问题。在第一块使用了两年后，更换了一块电池，继续战斗，产品质量靠谱。
 - [6] 为数据备份设备单独准备的后备电源。
+
+- 《[硬件笔记：组装“固态 U 盘”的八年，从 100 块到 1000 块](https://soulteary.com/2023/09/16/eight-years-of-assembling-solid-state-usb-disk-from-100-to-1000.html)》
 
 ### 📱 移动设备 & 🎮 游戏设备
 
