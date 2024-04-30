@@ -104,7 +104,7 @@
 
 ![MacOS:Sonoma 14.2](https://img.shields.io/badge/MacOS-Sonoma%2014.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:24GB](https://img.shields.io/badge/RAM-24GB-brightgreen?style=flat-square) ![Disk:1TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
 
-2023 年，把主力打自己替换为了拥有更好续航，更少发热，运行几乎没有噪音的 M2 版本的 Air。
+2023 年，把主力打字机替换为了拥有更好续航，更少发热，运行几乎没有噪音的 M2 版本的 Air。
 
 随着 Apple 停止生产 Intel 芯片的设备，除了验证构建软件的场景外，再继续持有设备，并作为主力设备有一些不明智，尤其是我的 19 款高配版本在关键时刻出现了两次过热黑屏。
 
