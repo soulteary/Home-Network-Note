@@ -55,13 +55,13 @@ func MakeGatewayTemplate(gateway Gateway) string {
 	}
 
 	if len(gateway.List) > 0 {
-		devicesIntro = append(devicesIntro, "| 资源类型 | 明细 | 网络 | 储存 | 开始服务 |")
-		devicesIntro = append(devicesIntro, "| --- | --- | --- | --- | --- |")
+		devicesIntro = append(devicesIntro, "| 资源类型 | 明细 | 网络 | 开始服务 |")
+		devicesIntro = append(devicesIntro, "| --- | --- | --- | --- |")
 		for _, item := range gateway.List {
 			if item.Storage == "" {
 				item.Storage = "-"
 			}
-			devicesIntro = append(devicesIntro, fmt.Sprintf("| %s | %s | %s | %s | %s |", item.Type, item.Name, item.Note, item.Storage, item.Date))
+			devicesIntro = append(devicesIntro, fmt.Sprintf("| %s | %s | %s | %s |", item.Type, item.Name, item.Note, item.Date))
 		}
 		devicesIntro = append(devicesIntro, "")
 	}

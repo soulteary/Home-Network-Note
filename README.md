@@ -76,13 +76,13 @@
 
 > 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/main/handbook/devices/device-list.md)。
 
-| 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
-| --- | --- | --- | --- | --- |
-| 交换机 | NETGEAR GS116E ^1 | 千兆LAN x16 | - | 2017 |
-| 路由器 | XiaoMi BE6500 Pro ^2 | 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN | - | 2023 |
-| 路由器 | Newifi D2 Plus ^3 | 2G WiFi / 5G WiFi / 千兆LAN | 8G | 2021 |
-| 路由器 | Xiaomi Mini 青春版 ^4 | 2G WiFi / 百兆LAN | - | 2016 |
-| 路由器 | 施耐德旅行插座 ^5 | 2G WiFi / 百兆LAN | - | 2018 |
+| 资源类型 | 明细 | 网络 | 开始服务 |
+| --- | --- | --- | --- |
+| 交换机 | NETGEAR GS116E ^1 | 千兆LAN x16 | 2017 |
+| 路由器 | XiaoMi BE6500 Pro ^2 | 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN | 2023 |
+| 路由器 | Newifi D2 Plus ^3 | 2G WiFi / 5G WiFi / 千兆LAN | 2021 |
+| 路由器 | Xiaomi Mini 青春版 ^4 | 2G WiFi / 百兆LAN | 2016 |
+| 路由器 | 施耐德旅行插座 ^5 | 2G WiFi / 百兆LAN | 2018 |
 
 👉 [完整说明](https://github.com/soulteary/Home-Network-Note/blob/main/network/gateway.md) / **简要说明** 👇
 

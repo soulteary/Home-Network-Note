@@ -2,13 +2,13 @@
 
 > 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/main/handbook/devices/device-list.md)。
 
-| 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
-| --- | --- | --- | --- | --- |
-| 交换机 | NETGEAR GS116E ^1 | 千兆LAN x16 | - | 2017 |
-| 路由器 | XiaoMi BE6500 Pro ^2 | 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN | - | 2023 |
-| 路由器 | Newifi D2 Plus ^3 | 2G WiFi / 5G WiFi / 千兆LAN | 8G | 2021 |
-| 路由器 | Xiaomi Mini 青春版 ^4 | 2G WiFi / 百兆LAN | - | 2016 |
-| 路由器 | 施耐德旅行插座 ^5 | 2G WiFi / 百兆LAN | - | 2018 |
+| 资源类型 | 明细 | 网络 | 开始服务 |
+| --- | --- | --- | --- |
+| 交换机 | NETGEAR GS116E ^1 | 千兆LAN x16 | 2017 |
+| 路由器 | XiaoMi BE6500 Pro ^2 | 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN | 2023 |
+| 路由器 | Newifi D2 Plus ^3 | 2G WiFi / 5G WiFi / 千兆LAN | 2021 |
+| 路由器 | Xiaomi Mini 青春版 ^4 | 2G WiFi / 百兆LAN | 2016 |
+| 路由器 | 施耐德旅行插座 ^5 | 2G WiFi / 百兆LAN | 2018 |
 
 - [1] 十六口千兆交换机，用于扩展主路由网络吞吐能力，带 Web 管理界面，最大功耗仅10w，铁壳散热。
 - [2] 扩展主路由的 AP 能力，提供屋内设备以 WiFi6 - WiFi7 模式，进行高速无线接入，以及米家本地智能策略网关，用于替代之前的 [Mi AIoT AX 3600](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Mi%20AIoT%20Router%20AX3600.md)。
