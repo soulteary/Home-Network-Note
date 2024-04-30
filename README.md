@@ -102,7 +102,7 @@
 
 > 目前使用最久的一台 MacBook 笔记本。
 
-![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I9-9980HK](https://img.shields.io/badge/CPU-Intel%20I9--9980HK%20(8%20cores,%202.4GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:AMD Radeon Pro 5500M](https://img.shields.io/badge/GPU-AMD%20Radeon%20Pro%205500M%20(8GB)-brightgreen?style=flat-square&logo=amd) ![RAM:32G](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I9-9980HK](https://img.shields.io/badge/CPU-Intel%20I9--9980HK(8C16T,%202.4GHz)-brightgreen?style=flat-square&logo=Intel) ![GPU:AMD Radeon Pro 5500M](https://img.shields.io/badge/GPU-AMD%20Radeon%20Pro%205500M%208GB-brightgreen?style=flat-square&logo=AMD) ![RAM:32GB](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 在 Apple 停止生产 Intel 芯片的 MacBook Pro 后，虽然也有使用 M1/M2 芯片的 MacBook Pro，但敲字的主力机一直是这台 Intel 设备。
 
@@ -120,7 +120,7 @@
 
 > 低成本、多核心数、高内存规格的笔记本。
 
-![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:AMD Zen2 4750u](https://img.shields.io/badge/CPU-AMD%20Zen2%204750u(8C16T,%201.7GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=Ubuntu) ![CPU:AMD Zen2 4750u](https://img.shields.io/badge/CPU-AMD%20Zen2%204750u(8C16T,%201.7GHz)-brightgreen?style=flat-square&logo=AMD) ![RAM:64GB](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 之前一直在寻找核心数多、功耗低、支持 64GB 内存、相对便携的无显卡笔记本设备，以做“廉价的服务器”使用，并替代早先时候购置的 [HP EliteDesk G4 800](./handbook/devices/HP-EliteDesk-G4-800.md) 小型工作站，直到遇到了搭载 AMD Zen2 4750u 的 ThinkPad L14。
 
@@ -133,14 +133,13 @@
     - 《[廉价的家用工作站方案：前篇](https://soulteary.com/2021/07/02/cheap-home-workstation-solution-part-one.html)》
     - 《[AMD 4750u 及 5800u 笔记本安装 Ubuntu 20.04](https://soulteary.com/2021/07/04/install-ubuntu-20-04-on-amd-4750u-and-5800u-laptops.html)》
 - 同宗同源，但已出掉的 5800u (ThinkBook 15)
-    - 《[AMD 5800u 笔记本折腾 Proxmox VE 7.0 虚拟化](https://soulteary.com/2021/10/23/amd-5800u-notebook-toss-proxmox-ve-7-0-virtualization.html)》、《[装在笔记本里的私有云环境：准备篇](https://soulteary.com/2021/10/28/private-cloud-environment-installed-in-a-notebook-preparation.html)》、《[装在笔记本里的私有云环境：监控篇](https://soulteary.com/2021/10/30/private-cloud-environment-installed-in-a-notebook-monitor.html)]》、《[装在笔记本里的私有云环境：网络存储篇（上）](https://soulteary.com/2021/11/04/private-cloud-environment-installed-in-a-notebook-storage-part-1.html)》、 《[装在笔记本里的私有云环境：网络存储篇（中）](https://soulteary.com/2021/11/09/private-cloud-environment-installed-in-a-notebook-storage-part-2.html)》、 《[装在笔记本里的私有云环境：K8s 集群准备](https://soulteary.com/2022/11/29/private-cloud-environment-installed-in-a-notebook-k8s-cluster-preparation.html)》
-
+    - 《[AMD 5800u 笔记本折腾 Proxmox VE 7.0 虚拟化](https://soulteary.com/2021/10/23/amd-5800u-notebook-toss-proxmox-ve-7-0-virtualization.html)》、《[装在笔记本里的私有云环境：准备篇](https://soulteary.com/2021/10/28/private-cloud-environment-installed-in-a-notebook-preparation.html)》、《[装在笔记本里的私有云环境：监控篇](https://soulteary.com/2021/10/30/private-cloud-environment-installed-in-a-notebook-monitor.html)》、《[装在笔记本里的私有云环境：网络存储篇（上）](https://soulteary.com/2021/11/04/private-cloud-environment-installed-in-a-notebook-storage-part-1.html)》、 《[装在笔记本里的私有云环境：网络存储篇（中）](https://soulteary.com/2021/11/09/private-cloud-environment-installed-in-a-notebook-storage-part-2.html)》、 《[装在笔记本里的私有云环境：K8s 集群准备](https://soulteary.com/2022/11/29/private-cloud-environment-installed-in-a-notebook-k8s-cluster-preparation.html)》
 
 ### Intel NUC8i5BEH ![Turn On:2021](https://img.shields.io/badge/Turn%20On-2021-brightgreen?style=flat-square)
 
 > 一台多面手，目前变成了一台 Apple TV。
 
-![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I5-8259U](https://img.shields.io/badge/CPU-Intel%20I5%208259U(4C8T,%202.3GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I5-8259U](https://img.shields.io/badge/CPU-Intel%20I5--8259U(4C8T,%202.3GHz)-brightgreen?style=flat-square&logo=Intel) ![RAM:64GB](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 最初的入手原因见[这篇文章](https://soulteary.com/2021/01/31/nuc-notes-linux-system.html)，随后在不断添置和更新新设备后，这台设备在职能转变为了一台安装了 ESXi 的编写虚拟机“母鸡”，支持了大量开源软件、尤其是具备分布式使用场景的软件的构建和部署测试相关的工作，极大的解放和降低了我的那台动不动就会风扇喧嚣起来的 Intel 芯片的 MacBook。
 

@@ -1,0 +1,10 @@
+Name: ThinkPad L14 Gen 1 (AMD)
+TurnOn: 2021,2022
+TLDR: 低成本、多核心数、高内存规格的笔记本。
+Info:
+  Syetem: Ubuntu:22.04
+  CPU: AMD Zen2 4750u:8C16T, 1.7GHz
+  RAM: 64GB
+  Disk: 2TB
+  LAN: 1000M
+  WiFi: 802.11ac
