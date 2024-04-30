@@ -1,0 +1,11 @@
+Name: Intel NUC9i5QNX
+TurnOn: 2023
+TLDR: 构建桌面全闪存 NAS / DAS 的准系统主机。
+Info:
+  Syetem: VMware:ESXi 7.0u3
+  CPU: Intel I5-9300H:4C8T, 2.4GHz
+  RAM: 16GB
+  Disk: 2TB
+  LAN: 2000M
+  WiFi: WiFi6
+  Thunderbolt: 3x2

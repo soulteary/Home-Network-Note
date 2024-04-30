@@ -15,13 +15,14 @@ type DevicePowerOn struct {
 	TurnOn string `yaml:"TurnOn"`
 	TLDR   string `yaml:"TLDR,omitempty"`
 	Info   struct {
-		Syetem string `yaml:"Syetem,omitempty"`
-		CPU    string `yaml:"CPU,omitempty"`
-		GPU    string `yaml:"GPU,omitempty"`
-		RAM    string `yaml:"RAM,omitempty"`
-		Disk   string `yaml:"Disk,omitempty"`
-		LAN    string `yaml:"LAN,omitempty"`
-		WiFi   string `yaml:"WiFi,omitempty"`
+		Syetem      string `yaml:"Syetem,omitempty"`
+		CPU         string `yaml:"CPU,omitempty"`
+		GPU         string `yaml:"GPU,omitempty"`
+		RAM         string `yaml:"RAM,omitempty"`
+		Disk        string `yaml:"Disk,omitempty"`
+		LAN         string `yaml:"LAN,omitempty"`
+		WiFi        string `yaml:"WiFi,omitempty"`
+		Thunderbolt string `yaml:"Thunderbolt,omitempty"`
 	} `yaml:"Info"`
 	Description string
 }
@@ -96,6 +97,8 @@ func MakeLabel(info string, infoType string) string {
 		return fmt.Sprintf("![LAN:%s](https://img.shields.io/badge/LAN-%s-brightgreen?style=flat-square)", info, info)
 	case "wifi":
 		return fmt.Sprintf("![WiFi:%s](https://img.shields.io/badge/WiFi-%s-brightgreen?style=flat-square)", info, info)
+	case "thunderbolt":
+		return fmt.Sprintf("![ThunderBolt:%s](https://img.shields.io/badge/ThunderBolt-%s-brightgreen?style=flat-square)", info, info)
 	}
 	return ""
 }

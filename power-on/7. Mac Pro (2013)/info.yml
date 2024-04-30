@@ -1,0 +1,11 @@
+Name: Mac Pro (2013)
+TurnOn: 2023
+TLDR: 为 128GB ECC RAM、高颜值、长期密集运算准备的设备。
+Info:
+  Syetem: MacOS:Ventura 13.2
+  CPU: Intel E5-2697v2:12C24T, 2.7GHz
+  GPU: AMD FirePro D300:4GBx2
+  RAM: 128GB(ECC)
+  Disk: 2TB
+  LAN: 1000M
+  WiFi: 802.11ac

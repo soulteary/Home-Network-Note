@@ -1,0 +1,10 @@
+Name: Dell OptiPlex 3060
+TurnOn: 2022
+TLDR: 重新建设中，用于获取和处理各种 RSS 信息。
+Info:
+  Syetem: VMware:ESXi 6.7u3
+  CPU: I3-9100T:4C4T, 3.10GHz
+  RAM: 16GB
+  Disk: 512GB
+  LAN: 1000M
+  WiFi: 802.11ac

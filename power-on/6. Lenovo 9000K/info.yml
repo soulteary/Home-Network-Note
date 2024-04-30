@@ -1,0 +1,11 @@
+Name: Lenovo 9000K
+TurnOn: 2023
+TLDR: 目前已重置，待重新投入使用。
+Info:
+  Syetem: Ubuntu:23.04
+  CPU: Intel I9-13900KF:24C32T, 3.0GHz
+  GPU: Nvidia 4090:24GB
+  RAM: 64GB
+  Disk: 2TB
+  LAN: 1000M
+  WiFi: 802.11ac

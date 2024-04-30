@@ -1,0 +1,10 @@
+Name: HP EliteDesk 800G6
+TurnOn: 2023
+TLDR: 使用各种淘汰硬件重置的另外一台全闪存 NAS。
+Info:
+  Syetem: VMware ESXi:7.0u3
+  CPU: Intel I3-9100T:4C4T, 3.10GHz
+  RAM: 32GB
+  Disk: 5.5TB
+  LAN: 1000M
+  WiFi: 802.11ac

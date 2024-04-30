@@ -164,7 +164,8 @@
 
 > 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
 
-![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20Apple%20M2-brightgreen?style=flat-square&logo=apple) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
 
 - [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
 - 相关文章记录
@@ -174,7 +175,8 @@
 
 > 重新建设中，用于获取和处理各种 RSS 信息。
 
-![ESXi:6.7u3](https://img.shields.io/badge/ESXi-6.7u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![Windows:11](https://img.shields.io/badge/Windows-11-brightgreen?style=flat-square&logo=microsoft) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=amd) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![VMware:ESXi 6.7u3](https://img.shields.io/badge/VMware-ESXi%206.7u3-brightgreen?style=flat-square&logo=VMware) ![CPU:I3-9100T](https://img.shields.io/badge/CPU-I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=I3-9100T) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
 
 重新建设中，用于获取和处理各种 RSS 信息。
 
@@ -182,18 +184,17 @@
 
 > 目前已重置，待重新投入使用。
 
-![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-23.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I9-13900KF](https://img.shields.io/badge/CPU-Intel%20I9%2013900KF(24C32T,%203.0GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:Nvidia 4090](https://img.shields.io/badge/GPU-Nvidia%204090%20(24GB)-brightgreen?style=flat-square&logo=nvidia) ![RAM:64G](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-23.04-brightgreen?style=flat-square&logo=Ubuntu) ![CPU:Intel I9-13900KF](https://img.shields.io/badge/CPU-Intel%20I9--13900KF(24C32T,%203.0GHz)-brightgreen?style=flat-square&logo=Intel) ![GPU:Nvidia 4090](https://img.shields.io/badge/GPU-Nvidia%204090%2024GB-brightgreen?style=flat-square&logo=Nvidia) ![RAM:64GB](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 机器性能不错，用来做本地模型验证。
 
 - [官方设备规格链接](https://item.lenovo.com.cn/product/1026169.html)
 
-
 ### Mac Pro (2013) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
 > 为 128GB ECC RAM、高颜值、长期密集运算准备的设备。
 
-![MacOS:Ventura](https://img.shields.io/badge/MacOS-Ventura%2013.2%20-brightgreen?style=flat-square&logo=apple) ![CPU:Intel E5-2697v2](https://img.shields.io/badge/CPU-Intel%20E5--2697v2%20(12%24cores,%202.7GHz)-brightgreen?style=flat-square&logo=intel) ![GPU:AMD FirePro D300](https://img.shields.io/badge/GPU-AMD%20FirePro%20D300x2%20(4GB)-brightgreen?style=flat-square&logo=amd) ![RAM:128G](https://img.shields.io/badge/RAM-128GB%20(ECC)-brightgreen?style=flat-square) ![Disk:2T](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Intel E5-2697v2](https://img.shields.io/badge/CPU-Intel%20E5--2697v2(12C24T,%202.7GHz)-brightgreen?style=flat-square&logo=Intel) ![GPU:AMD FirePro D300](https://img.shields.io/badge/GPU-AMD%20FirePro%20D300%204GBx2-brightgreen?style=flat-square&logo=AMD) ![RAM:128GB(ECC)](https://img.shields.io/badge/RAM-128GB(ECC)-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比前两年的设备也毫不逊色。唯一缺点，相对功耗较高。
 
@@ -201,12 +202,11 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - 相关文章记录
     - 《[廉价的家庭工作站设备改造记录：苹果垃圾桶（Mac Pro 2013）](https://soulteary.com/2023/02/04/cheap-home-workstation-solution-mac-pro-2013.html.html)》。
 
-
 ### HP EliteDesk 800G6 ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
 > 使用各种淘汰硬件重置的另外一台全闪存 NAS。
 
-![ESXi:7.0u3](https://img.shields.io/badge/ESXi-7.0u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:22.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![Windows:10](https://img.shields.io/badge/Windows-1--brightgreen?style=flat-square&logo=microsoft) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3%209100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:32G](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:5.5TB](https://img.shields.io/badge/Disk-5.5TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![VMware ESXi:7.0u3](https://img.shields.io/badge/VMware%20ESXi-7.0u3-brightgreen?style=flat-square&logo=VMware ESXi) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=Intel) ![RAM:32GB](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:5.5TB](https://img.shields.io/badge/Disk-5.5TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 已重置，待重新投入使用。
 
@@ -216,13 +216,11 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
     - 《[低成本搭建一台 Unraid 家庭存储服务器：中篇](https://soulteary.com/2023/01/21/building-a-home-unraid-storage-server-at-low-cost-part-two.html)》
     - 《[低成本搭建一台家庭存储服务器：全闪存篇](https://soulteary.com/2023/09/17/building-a-home-storage-server-at-low-cost-part-pure-flash.html)》
 
-
-
 ### Intel NUC9i5QNX ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
 > 构建桌面全闪存 NAS / DAS 的准系统主机。
 
-![ESXi:7.0u3](https://img.shields.io/badge/ESXi-7.0u3-brightgreen?style=flat-square&logo=vmware) ![Ubuntu:23.04](https://img.shields.io/badge/Ubuntu-22.04-brightgreen?style=flat-square&logo=ubuntu) ![CPU:Intel I5-9300H](https://img.shields.io/badge/CPU-Intel%20I5%209300H(4C8T,%202.4GHz)-brightgreen?style=flat-square&logo=intel) ![RAM:16G](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:2000M](https://img.shields.io/badge/LAN-2000M-brightgreen?style=flat-square) ![WiFi:6](https://img.shields.io/badge/WiFi-6-brightgreen?style=flat-square) ![thunderbolt:3](https://img.shields.io/badge/Thunderbolt-3%20x2-brightgreen?style=flat-square)
+![VMware:ESXi 7.0u3](https://img.shields.io/badge/VMware-ESXi%207.0u3-brightgreen?style=flat-square&logo=VMware) ![CPU:Intel I5-9300H](https://img.shields.io/badge/CPU-Intel%20I5--9300H(4C8T,%202.4GHz)-brightgreen?style=flat-square&logo=Intel) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:2000M](https://img.shields.io/badge/LAN-2000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
 
 这台设备入手原因见[这篇文章](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)，目前正在使用它进行全闪存雷电 NAS 的搭建。
 
