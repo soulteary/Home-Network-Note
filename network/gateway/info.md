@@ -1,4 +1,4 @@
-- [1] 十六口千兆交换机，用于扩展主路由网络吞吐能力，带 Web 管理界面，最大功耗仅10w，铁壳散热。
+- [1] 十六口千兆交换机，用于扩展主路由网络吞吐能力，带 Web 管理界面，最大功耗仅10w，铁壳散热，替换之前的[八口交换机](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/NetGear%20GS308.md)。
 - [2] 扩展主路由的 AP 能力，提供屋内设备以 WiFi6 - WiFi7 模式，进行高速无线接入，以及米家本地智能策略网关，用于替代之前的 [Mi AIoT AX 3600](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Mi%20AIoT%20Router%20AX3600.md)。
 - [3] 21 年再次更新，替换到之前已经使用三年的[普通版本](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Newifi%20D2%20(Newifi3).md)，全千兆的四口主路由（二级路由），拥有 512M 的内存和铁壳、大面积铜片散热器，延续 Newifi 极高的性价比，一度使用两台相同规格的设备作为拨号路由器和二级路由。相关文章：[近期家用设备（NUC、猫盘、路由器）散热升级记录](https://soulteary.com/2021/10/14/recent-heat-dissipation-upgrade-record-of-homelab.html)。
 - [4] 相比较[正常体积的 Mini](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20WiFi%20Mini.md) 或者随后出品的 [AC 2100](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20Router%20AC2100.md)，青春版就小巧玲珑多了。除了小巧方便、颜值较高之外，路由功耗极低、三方固件也支持各种各样的 DIY，除了百兆带宽在当前看来比较不够用之外，一切都很好。如果是用在调试开发场景，那么还是比较合适的。

@@ -2,7 +2,7 @@
 
 ![NETGEAR GS308](https://raw.githubusercontent.com/soulteary/Home-Network-Note/main/deprecate/NetGear%20GS308/netgear-gs308.jpg)
 
-- [官方设备规格链接](https://openwrt.org/toh/lenovo/newifi_d1)
+- [官方设备规格链接](https://www.downloads.netgear.com/files/GDC/Unmanaged_Switches/300-Series_Gigabit_DS.pdf)
 
 ### 购入信息
 
