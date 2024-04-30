@@ -14,11 +14,15 @@ List:
     Note: 2G WiFi / 5G WiFi / 千兆LAN
     Date: 2021
     Storage: 8G
-  - Name: Xiaomi Mini 青春版 ^4
+  - Name: NETGEAR GS105v2 x2 ^4
+    Type: 交换机
+    Note: 千兆LAN x4
+    Date: 2021,2023
+  - Name: Xiaomi Mini 青春版 ^5
     Type: 路由器
     Note: 2G WiFi / 百兆LAN
     Date: 2016
-  - Name: 施耐德旅行插座 ^5
+  - Name: 施耐德旅行插座 ^6
     Type: 路由器
     Note: 2G WiFi / 百兆LAN
     Date: 2018
