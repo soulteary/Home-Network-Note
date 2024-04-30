@@ -1,0 +1,11 @@
+Name: Newifi D2 (Newifi3)
+TurnOn: 2018
+TurnOff: 2021
+TLDR: 18 年开始，购入了两台替换前代 Newifi D1，刷固件后非常稳定。
+Info:
+  Syetem: OpenWRT:Padavan
+  CPU: MediaTek:MT7621AT
+  RAM: 512MB
+  Disk: 32MB
+  LAN: 1000M
+  WiFi: WiFi5

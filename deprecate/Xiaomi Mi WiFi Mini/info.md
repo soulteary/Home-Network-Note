@@ -1,8 +1,6 @@
-## 小米路由Mini
+![XiaoMi Route Mini](https://raw.githubusercontent.com/soulteary/Home-Network-Note/main/deprecate/Xiaomi%20Mi%20WiFi%20Mini/xiaomi-route-mini.jpg)
 
-    XiaoMi Route Mini
-
-![XiaoMi Route Mini](./assets/device/xiaomi-route-mini.jpg)
+- [官方设备规格链接](https://openwrt.org/toh/xiaomi/miwifi_mini)
 
 ### 购入信息
 
@@ -10,7 +8,7 @@
 
 ### 折腾记录
 
-- 之前一直使用原始系统，直到某日小米更新系统之后，使用Nginx劫持404页面等行为，于是刷了潘多拉。
+- 之前一直使用原始系统，直到某日小米更新系统之后，使用 Nginx 劫持 404 页面等行为，于是刷了潘多拉。
 - 新固件版本```PandoraBox-ralink-mt7620-xiaomi-mini-squashfs-sysupgrade-r1024-20150608```。
 - 不论作为拨号路由还是主路由使用，刷机之后，都异常稳定，品质非常好。
 

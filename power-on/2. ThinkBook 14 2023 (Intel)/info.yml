@@ -1,0 +1,11 @@
+Name: ThinkBook 14 2023 (Intel)
+TurnOn: 2023
+TLDR: 多核心、高性能、满血雷电的便携计算平台。
+Info:
+  Syetem: Ubuntu:23.10
+  CPU: Intel I7 13700H:14C(6P+8E)20T
+  RAM: 64GB
+  Disk: 4TB
+  LAN: 1000M
+  WiFi: WiFi6
+  Thunderbolt: 4x1

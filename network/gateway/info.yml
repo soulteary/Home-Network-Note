@@ -1,0 +1,24 @@
+TLDR: 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/main/handbook/devices/device-list.md)。
+Full: 👉 [完整说明](https://github.com/soulteary/Home-Network-Note/blob/main/network/gateway.md) / **简要说明** 👇
+List:
+  - Name: NETGEAR GS116E ^1
+    Type: 交换机
+    Note: 千兆LAN x16
+    Date: 2017
+  - Name: XiaoMi BE6500 Pro ^2
+    Type: 路由器
+    Note: 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN
+    Date: 2023
+  - Name: Newifi D2 Plus ^3
+    Type: 路由器
+    Note: 2G WiFi / 5G WiFi / 千兆LAN
+    Date: 2021
+    Storage: 8G
+  - Name: Xiaomi Mini 青春版 ^4
+    Type: 路由器
+    Note: 2G WiFi / 百兆LAN
+    Date: 2016
+  - Name: 施耐德旅行插座 ^5
+    Type: 路由器
+    Note: 2G WiFi / 百兆LAN
+    Date: 2018

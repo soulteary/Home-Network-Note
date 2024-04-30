@@ -1,4 +1,4 @@
-### MacBook Pro (16-inch, 2019) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square)
+### MacBook Pro (16-inch, 2019) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square) ![Turn Off:2023](https://img.shields.io/badge/Turn%20Off-2023-red?style=flat-square)
 
 > 目前使用最久的一台 MacBook 笔记本。
 

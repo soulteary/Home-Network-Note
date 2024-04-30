@@ -1,0 +1,11 @@
+Name: Newifi D1
+TurnOn: 2016
+TurnOff: 2018
+TLDR: 16年、17年购入路由，组建双层网络，蛮好用的。
+Info:
+  Syetem: OpenWRT:Padavan
+  CPU: MediaTek:MT7621AT
+  RAM: 256MB
+  Disk: 32MB
+  LAN: 1000M
+  WiFi: WiFi5

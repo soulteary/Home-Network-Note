@@ -64,7 +64,7 @@
 | 北京电信 | 5G | 主网络，用于日常上网、热点 |
 | 北京联通 | 5G | 备份网络，用于补充信号覆盖 |
 
-👉 [完整说明](./handbook/items-in-use/boardband.md) / **简要说明** 👇 
+👉 [完整说明](https://github.com/soulteary/Home-Network-Note/blob/main/network/broadband.md) / **简要说明** 👇
 
 - [1] 如果没有特殊需求，建议简化不必要的多线宽带，避免策略路由带来的各种问题，以及避免使用使用软路由聚合不同类型宽带，带来后续维护上的麻烦。
 - [2] 带宽使用过程中不建议依赖任何提速软件，避免当软件不可用时，带宽质量严重受损，以及带来的额外维护“提速软件”运行环境带来的成本。
@@ -73,25 +73,23 @@
 
 ## ⭐️ 路由网关
 
-> 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](./handbook/devices/device-list.md)。
+> 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/main/handbook/devices/device-list.md)。
 
 | 资源类型 | 明细 | 网络 | 储存 | 开始服务 |
 | --- | --- | --- | --- | --- |
 | 交换机 | NETGEAR GS116E ^1 | 千兆LAN x16 | - | 2017 |
-| 路由器 | Xiaomi AIot AX 3600 ^2 | 2G Wi-Fi / 5G Wi-Fi（Wi-Fi6） / 千兆LAN | - | 2020 |
-| 路由器 | Newifi D2 ^3 | 2G Wi-Fi / 5G Wi-Fi / 千兆LAN | 8G | 2018 |
-| 路由器 | Xiaomi AC2100 ^4 | 5G WIFI / 千兆LAN | - | 2020 |
-| 路由器 | Xiaomi Mini 青春版 ^5 | 2G Wi-Fi / 百兆LAN | - | 2016 |
-| 路由器 | 施耐德旅行插座 ^6 | 2G WIFI / 百兆LAN | - | 2018 |
+| 路由器 | XiaoMi BE6500 Pro ^2 | 2G WiFi / 5G Wi-Fi（WiFi7） / 2.5G LAN | - | 2023 |
+| 路由器 | Newifi D2 Plus ^3 | 2G WiFi / 5G WiFi / 千兆LAN | 8G | 2021 |
+| 路由器 | Xiaomi Mini 青春版 ^4 | 2G WiFi / 百兆LAN | - | 2016 |
+| 路由器 | 施耐德旅行插座 ^5 | 2G WiFi / 百兆LAN | - | 2018 |
 
-👉 [完整说明](./handbook/items-in-use/gateway.md) / **简要说明** 👇 
+👉 [完整说明](https://github.com/soulteary/Home-Network-Note/blob/main/network/gateway.md) / **简要说明** 👇
 
-- [1] 八口千兆交换机，用于扩展主路由网络吞吐能力，带 Web 管理界面，带铁壳散热，最大功耗仅10w，目前感觉最超值的一个设备。
-- [2] 扩展主路由的 AP 能力，提供屋内设备以 Wi-Fi 6 模式，进行高速无线接入。
-- [3] 全千兆四口主路由（二级路由），拥有 512M 内存和铁壳散热的路由器，延续 Newifi 极高的性价比，一度使用两台相同规格的设备作为拨号路由器和二级路由。
-- [4] 偶尔在开发调试时使用，用于替换之前使用的[小米路由器第一版](./handbook/devices/XiaoMi-Route-Mini.md)，相比较之下，固件修改复杂度稍高一些，但是胜在全千兆。
-- [5] 功耗极低，小巧方便，适合旅游或者临时需要网络进行调试的场景，三方适配的固件功能强大，如果公司不限制使用自建路由作为调试环境，强烈建议入一台。
-- [6] 此插座自带一个简易的热点 WiFi 功能，如果你需要插上设备就自动组网，可以使用上面的设备，如果你没有自动组网等需求，那么这个能让你上网的插座，用起来体验还不错，唯一槽点，插座本身发热比较严重，或许对网络稳定性/质量有一定影响。
+- [1] 十六口千兆交换机，用于扩展主路由网络吞吐能力，带 Web 管理界面，最大功耗仅10w，铁壳散热。
+- [2] 扩展主路由的 AP 能力，提供屋内设备以 WiFi6 - WiFi7 模式，进行高速无线接入，以及米家本地智能策略网关，用于替代之前的 [Mi AIoT AX 3600](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Mi%20AIoT%20Router%20AX3600.md)。
+- [3] 21 年再次更新，替换到之前已经使用三年的[普通版本](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Newifi%20D2%20(Newifi3).md)，全千兆的四口主路由（二级路由），拥有 512M 的内存和铁壳、大面积铜片散热器，延续 Newifi 极高的性价比，一度使用两台相同规格的设备作为拨号路由器和二级路由。相关文章：[近期家用设备（NUC、猫盘、路由器）散热升级记录](https://soulteary.com/2021/10/14/recent-heat-dissipation-upgrade-record-of-homelab.html)。
+- [4] 相比较[正常体积的 Mini](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20WiFi%20Mini.md) 或者随后出品的 [AC 2100](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20Router%20AC2100.md)，青春版就小巧玲珑多了。除了小巧方便、颜值较高之外，路由功耗极低、三方固件也支持各种各样的 DIY，除了百兆带宽在当前看来比较不够用之外，一切都很好。如果是用在调试开发场景，那么还是比较合适的。
+- [5] 此插座自带一个简易的热点 WiFi 功能，如果你需要插上设备就自动组网，可以使用上面的设备，如果你没有自动组网等需求，那么这个能让你上网的插座，用起来体验还不错，唯一槽点，插座本身发热比较严重，或许对网络稳定性/质量有一定影响。
 
 
 ## 💻 主机资源
@@ -106,13 +104,33 @@
 
 2023 年，把主力打字机替换为了拥有更好续航，更少发热，运行几乎没有噪音的 M2 版本的 Air。
 
-随着 Apple 停止生产 Intel 芯片的设备，除了验证构建软件的场景外，再继续持有设备，并作为主力设备有一些不明智，尤其是我的 19 款高配版本在关键时刻出现了两次过热黑屏。
+随着 Apple 停止生产 Intel 芯片的设备，除了验证构建软件的场景外，再继续持有设备，并作为主力设备有一些不明智，尤其是我的 [19 款高配版本 MBP](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/MacBook%20Pro%20(16-inch%2C%202019).md)在关键时刻出现了两次过热黑屏。
 
 性能方面，一方面我将更需要密集计算的任务移动到了其他的设备中，另外一方面，这台设备的性能比我之前的 Intel I9 处理器只高不低（单核+37%、多核+15%、FP32+83%），虽然在构建 Docker、使用一些小众软件过程中有细节的影响，但总归体验还是提升的。
 
 日常不论是出差还是在外通勤、临时会议，支撑一天的电量毫无压力，加上笔记本的重量非常友好，或许我的下一台打字机设备，还会是 Air。
 
 - [官方设备规格链接](https://support.apple.com/zh-cn/111346)
+
+### ThinkBook 14 2023 (Intel) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+
+> 多核心、高性能、满血雷电的便携计算平台。
+
+![Ubuntu:23.10](https://img.shields.io/badge/Ubuntu-23.10-brightgreen?style=flat-square&logo=Ubuntu) ![CPU:Intel I7 13700H](https://img.shields.io/badge/CPU-Intel%20I7%2013700H(14C(6P+8E)20T)-brightgreen?style=flat-square&logo=Intel) ![RAM:64GB](https://img.shields.io/badge/RAM-64GB-brightgreen?style=flat-square) ![Disk:4TB](https://img.shields.io/badge/Disk-4TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
+
+2023 年国庆的时候，考虑到各种原因，我将主力输入设备换成了 MacBook Air，这几年的 Mac 设备只有 Apple Silicon 芯片（M1、M2、M3 这类 ARM 芯片），好多应用和 Docker 的兼容性真的还是有很大问题。
+
+我就开始想，能不能多带一台轻便易携多设备出门，解决日常的开发体验、方案验证问题，还可以避免糟糕网络带来的糟糕的远程使用体验和可访问性的问题，并且成本还低。当然，主力输入设备重量降低到了 1.5kg，也是我可以再考虑多带一台设备的原因。
+
+在一番简单筛选后，找到了联想 ThinkBook 14，14寸的机身，原生支持雷电4（CPU而非外置芯片），拥有双内存插槽、双硬盘槽、有 13500h 或 13700h 两种 CPU 型号选择的笔记本，设备重量也只有 1.4kg，基础功耗不到 30w。
+
+这台设备的算力相比较之前的 Intel I9 MacBook Pro，至少性能提升 38%，有一说一，五千块的基础价格，还是非常香的。
+
+当我需要额外算力，又不需要显卡的时候，带两台笔记本，使用雷电线将两台设备连接到一起后，我就拥有了更多的核心、标准的 Linux 操作系统环境、更大的存储空间，甚至是一块副屏。
+
+- [官方设备规格链接](https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G6_IRL/ThinkBook_14_G6_IRL_Spec.pdf)
+- 相关文章记录
+    - 《[家用工作站方案：ThinkBook 14 2023 版](https://soulteary.com/2023/11/09/home-workstation-solution-thinkbook-14-2023.html)》
 
 ### ThinkPad L14 Gen 1 (AMD) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
 
@@ -157,17 +175,6 @@
 - [官方设备规格链接](https://www.intel.cn/content/www/cn/zh/products/sku/126135/intel-nuc-kit-nuc7cjyh/specifications.html)
 - 相关文章记录
     - 《[NUC7 一台并不弱的 Mini PC](https://soulteary.com/2021/10/19/nuc7-a-mini-pc-that-is-not-weak.html)》
-
-### MacBook Pro M2 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
-
-> 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
-
-![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
-
-
-- [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
-- 相关文章记录
-    - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
 
 ### Dell OptiPlex 3060 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
 
@@ -226,6 +233,18 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - 相关文章记录
     - 《[廉价的全闪存雷电 NAS 折腾笔记：组网方案的选择](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)》
     - 《[廉价的全闪存雷电 NAS 折腾笔记：NUC9 操作系统踩坑](https://soulteary.com/2023/09/12/cheap-pure-flash-thunderbolt-nas-tossing-notes-nuc9-operating-system-pitfalls.html)》
+
+### MacBook Pro M2 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
+
+> 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
+
+![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+
+
+- [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
+- 相关文章记录
+    - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
+
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 
