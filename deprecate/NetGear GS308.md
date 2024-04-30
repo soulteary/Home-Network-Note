@@ -2,7 +2,7 @@
 
 > 16 年购入，用于扩展主路由的端口和吞吐能力。
 
-![Netgear:Unmanaged](https://img.shields.io/badge/Netgear-Unmanaged-brightgreen?style=flat-square&logo=Netgear) ![LAN:16GBps, 1.448Mpps](https://img.shields.io/badge/LAN-16GBps, 1.448Mpps-brightgreen?style=flat-square)
+![Netgear:Unmanaged](https://img.shields.io/badge/Netgear-Unmanaged-brightgreen?style=flat-square&logo=Netgear) ![LAN:16GBps,1.448Mpps](https://img.shields.io/badge/LAN-16GBps,1.448Mpps-brightgreen?style=flat-square)
 
 非常好用，在 17 年购置设备越来越多后，因为端口不足替而替换。
 
