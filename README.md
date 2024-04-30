@@ -71,6 +71,7 @@
 - [3] 个人体验原因，已停用移动电话卡，取消原本无线三网接入。
 
 
+
 ## ⭐️ 路由网关
 
 > 影响网络质量的核心设备，负责部分网络安全事务，[历史设备见文档](https://github.com/soulteary/Home-Network-Note/blob/main/handbook/devices/device-list.md)。
@@ -90,6 +91,7 @@
 - [3] 21 年再次更新，替换到之前已经使用三年的[普通版本](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Newifi%20D2%20(Newifi3).md)，全千兆的四口主路由（二级路由），拥有 512M 的内存和铁壳、大面积铜片散热器，延续 Newifi 极高的性价比，一度使用两台相同规格的设备作为拨号路由器和二级路由。相关文章：[近期家用设备（NUC、猫盘、路由器）散热升级记录](https://soulteary.com/2021/10/14/recent-heat-dissipation-upgrade-record-of-homelab.html)。
 - [4] 相比较[正常体积的 Mini](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20WiFi%20Mini.md) 或者随后出品的 [AC 2100](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/Xiaomi%20Mi%20Router%20AC2100.md)，青春版就小巧玲珑多了。除了小巧方便、颜值较高之外，路由功耗极低、三方固件也支持各种各样的 DIY，除了百兆带宽在当前看来比较不够用之外，一切都很好。如果是用在调试开发场景，那么还是比较合适的。
 - [5] 此插座自带一个简易的热点 WiFi 功能，如果你需要插上设备就自动组网，可以使用上面的设备，如果你没有自动组网等需求，那么这个能让你上网的插座，用起来体验还不错，唯一槽点，插座本身发热比较严重，或许对网络稳定性/质量有一定影响。
+
 
 
 ## 💻 主机资源
@@ -246,11 +248,10 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
     - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
 
 
-👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
+👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇
 
 
-
-### 🚚 储存资源
+## 🚚 储存资源
 
 > 用来持久化保存资料，开始服务时间从作为存储角色开始计算。[历史设备见文档](./handbook/devices/device-list.md)。
 
@@ -274,7 +275,8 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 
 - 《[硬件笔记：组装“固态 U 盘”的八年，从 100 块到 1000 块](https://soulteary.com/2023/09/16/eight-years-of-assembling-solid-state-usb-disk-from-100-to-1000.html)》
 
-### 📱 移动设备 & 🎮 游戏设备
+
+## 📱 移动设备 & 🎮 游戏设备
 
 > 强依赖网络进行交互的娱乐设备。[历史设备见文档](./handbook/devices/device-list.md)。
 
@@ -310,7 +312,8 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - [12] 微信读书阅读器，体验很棒。
 - [13] 年度最值手机，作为monitor使用，极低功耗，可以愉快跑脚本，已购两台。
 
-### 🔮 智能设备 & 周边
+
+## 🔮 智能设备 & 周边
 
 待更新
 
@@ -328,6 +331,7 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 | 8 | 网络摄像头 | 小方等 x2 | 2G WIFI | 2018年 |
 | 9 | 网络盒子 | 小米盒子4SPro | WIFI6 | 2021年 |
 | 10 | 网络盒子 | AppleTV 6 | WIFI6 | 2021年 |
+
 
 ## 简要说明
 

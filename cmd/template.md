@@ -57,9 +57,11 @@
 
 ${BROADBAND_NETWORK}
 
+
 ## ⭐️ 路由网关
 
 ${GATEWAY_NETWORK}
+
 
 ## 💻 主机资源
 
@@ -67,11 +69,10 @@ ${GATEWAY_NETWORK}
 
 ${COMPUTING_DEVICES}
 
-👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
+👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇
 
 
-
-### 🚚 储存资源
+## 🚚 储存资源
 
 > 用来持久化保存资料，开始服务时间从作为存储角色开始计算。[历史设备见文档](./handbook/devices/device-list.md)。
 
@@ -95,7 +96,8 @@ ${COMPUTING_DEVICES}
 
 - 《[硬件笔记：组装“固态 U 盘”的八年，从 100 块到 1000 块](https://soulteary.com/2023/09/16/eight-years-of-assembling-solid-state-usb-disk-from-100-to-1000.html)》
 
-### 📱 移动设备 & 🎮 游戏设备
+
+## 📱 移动设备 & 🎮 游戏设备
 
 > 强依赖网络进行交互的娱乐设备。[历史设备见文档](./handbook/devices/device-list.md)。
 
@@ -131,7 +133,8 @@ ${COMPUTING_DEVICES}
 - [12] 微信读书阅读器，体验很棒。
 - [13] 年度最值手机，作为monitor使用，极低功耗，可以愉快跑脚本，已购两台。
 
-### 🔮 智能设备 & 周边
+
+## 🔮 智能设备 & 周边
 
 待更新
 
@@ -149,6 +152,7 @@ ${COMPUTING_DEVICES}
 | 8 | 网络摄像头 | 小方等 x2 | 2G WIFI | 2018年 |
 | 9 | 网络盒子 | 小米盒子4SPro | WIFI6 | 2021年 |
 | 10 | 网络盒子 | AppleTV 6 | WIFI6 | 2021年 |
+
 
 ## 简要说明
 
