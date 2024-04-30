@@ -97,25 +97,6 @@
 ## 💻 主机资源
 
 > 提供运算能力的本地设备，[历史设备见文档](./handbook/devices/device-list.md)。
-
-### MacBook Pro (16-inch, 2019) ![Turn On:2019](https://img.shields.io/badge/Turn%20On-2019-brightgreen?style=flat-square)
-
-> 目前使用最久的一台 MacBook 笔记本。
-
-![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Intel I9-9980HK](https://img.shields.io/badge/CPU-Intel%20I9--9980HK(8C16T,%202.4GHz)-brightgreen?style=flat-square&logo=Intel) ![GPU:AMD Radeon Pro 5500M](https://img.shields.io/badge/GPU-AMD%20Radeon%20Pro%205500M%208GB-brightgreen?style=flat-square&logo=AMD) ![RAM:32GB](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
-
-在 Apple 停止生产 Intel 芯片的 MacBook Pro 后，虽然也有使用 M1/M2 芯片的 MacBook Pro，但敲字的主力机一直是这台 Intel 设备。
-
-这台设备在 19 年首发时入手，改良后的第一代蝶式键盘，让我告别了之前频繁去“苹果售后”清理键盘中的猫毛，恢复键盘失灵的问题。
-
-这台设备的性能让我非常满意，实测性能比同为 16 寸，但是搭载 i7 2.6GHz CPU 的设备性能足足高了 20～30%。
-
-- [官方设备规格链接](https://support.apple.com/kb/SP809?locale=zh_CN)
-- 相关文章记录
-    - 《[那些名为 Pro 的设备们 - MacBook Pro 16inch：终于等到你](https://soulteary.com/2019/12/21/my-devices-named-pro-in-2019.html#macbook-pro-16inch%E7%BB%88%E4%BA%8E%E7%AD%89%E5%88%B0%E4%BD%A0)》
-    - 《[MacBook 与其他设备的低成本高性能数据传输方案（一）](https://soulteary.com/2023/01/01/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices.html)》
-    - 《[MacBook 与其他设备的低成本高性能数据传输方案（二）](https://soulteary.com/2023/01/03/low-cost-high-performance-data-transfer-solution-for-macbook-and-other-devices-part-2.html)》
-
 ### ThinkPad L14 Gen 1 (AMD) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
 
 > 低成本、多核心数、高内存规格的笔记本。
@@ -206,7 +187,7 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 
 > 使用各种淘汰硬件重置的另外一台全闪存 NAS。
 
-![VMware ESXi:7.0u3](https://img.shields.io/badge/VMware%20ESXi-7.0u3-brightgreen?style=flat-square&logo=VMware ESXi) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=Intel) ![RAM:32GB](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:5.5TB](https://img.shields.io/badge/Disk-5.5TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![VMware:ESXi 7.0u3](https://img.shields.io/badge/VMware-ESXi%207.0u3-brightgreen?style=flat-square&logo=VMware) ![CPU:Intel I3-9100T](https://img.shields.io/badge/CPU-Intel%20I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=Intel) ![RAM:32GB](https://img.shields.io/badge/RAM-32GB-brightgreen?style=flat-square) ![Disk:5.5TB](https://img.shields.io/badge/Disk-5.5TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 已重置，待重新投入使用。
 
@@ -228,7 +209,6 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
 - 相关文章记录
     - 《[廉价的全闪存雷电 NAS 折腾笔记：组网方案的选择](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)》
     - 《[廉价的全闪存雷电 NAS 折腾笔记：NUC9 操作系统踩坑](https://soulteary.com/2023/09/12/cheap-pure-flash-thunderbolt-nas-tossing-notes-nuc9-operating-system-pitfalls.html)》
-
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇 
 

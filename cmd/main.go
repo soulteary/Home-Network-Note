@@ -10,7 +10,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-type DevicePowerOn struct {
+type Device struct {
 	Name   string `yaml:"Name"`
 	TurnOn string `yaml:"TurnOn"`
 	TLDR   string `yaml:"TLDR,omitempty"`
@@ -27,7 +27,7 @@ type DevicePowerOn struct {
 	Description string
 }
 
-func GetPowerOnList() (devices []DevicePowerOn) {
+func GetPowerOnList() (devices []Device) {
 	const baseDir = "../power-on"
 	files, err := os.ReadDir(baseDir)
 	if err != nil {
@@ -44,7 +44,27 @@ func GetPowerOnList() (devices []DevicePowerOn) {
 	return devices
 }
 
-func GetDeviceInfo(baseDir string) (devicePowerOn DevicePowerOn, err error) {
+func GetPowerOffList() {
+	const baseDir = "../power-off"
+	files, err := os.ReadDir(baseDir)
+	if err != nil {
+		log.Fatalln("get files error: ", err)
+	}
+	for _, file := range files {
+		if file.IsDir() {
+			configDir := filepath.Join(baseDir, file.Name())
+			deviceInfo, err := GetDeviceInfo(configDir)
+			if err != nil {
+				log.Fatalln("get device info error: ", err)
+			}
+			os.WriteFile(filepath.Join(baseDir, file.Name()+".md"), []byte(MakeTemplate(deviceInfo)), 0644)
+		} else {
+			os.Remove(filepath.Join(baseDir, file.Name()))
+		}
+	}
+}
+
+func GetDeviceInfo(baseDir string) (devicePowerOn Device, err error) {
 	buf, err := os.ReadFile(filepath.Join(baseDir, "info.yml"))
 	if err != nil {
 		fmt.Println("read device yaml error: ", err)
@@ -103,7 +123,7 @@ func MakeLabel(info string, infoType string) string {
 	return ""
 }
 
-func MakeTemplate(device DevicePowerOn) (result string) {
+func MakeTemplate(device Device) (result string) {
 	var draft []string
 	title := fmt.Sprintf("### %s ![Turn On:%s](https://img.shields.io/badge/Turn%%20On-%s-brightgreen?style=flat-square)", device.Name, device.TurnOn, device.TurnOn)
 	draft = append(draft, title, "")
@@ -144,10 +164,10 @@ func MakeTemplate(device DevicePowerOn) (result string) {
 func main() {
 
 	devices := GetPowerOnList()
-
 	for _, device := range devices {
 		tpl := MakeTemplate(device)
 		fmt.Println(tpl)
 	}
 
+	GetPowerOffList()
 }
