@@ -97,6 +97,23 @@
 ## 💻 主机资源
 
 > 提供运算能力的本地设备，[历史设备见文档](./handbook/devices/device-list.md)。
+
+### MacBook Air (15-inch, 2023) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+
+> 轻便、长续航，一切刚刚好的打字机。
+
+![MacOS:Sonoma 14.2](https://img.shields.io/badge/MacOS-Sonoma%2014.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:24GB](https://img.shields.io/badge/RAM-24GB-brightgreen?style=flat-square) ![Disk:1TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
+
+2023 年，把主力打自己替换为了拥有更好续航，更少发热，运行几乎没有噪音的 M2 版本的 Air。
+
+随着 Apple 停止生产 Intel 芯片的设备，除了验证构建软件的场景外，再继续持有设备，并作为主力设备有一些不明智，尤其是我的 19 款高配版本在关键时刻出现了两次过热黑屏。
+
+性能方面，一方面我将更需要密集计算的任务移动到了其他的设备中，另外一方面，这台设备的性能比我之前的 Intel I9 处理器只高不低（单核+37%、多核+15%、FP32+83%），虽然在构建 Docker、使用一些小众软件过程中有细节的影响，但总归体验还是提升的。
+
+日常不论是出差还是在外通勤、临时会议，支撑一天的电量毫无压力，加上笔记本的重量非常友好，或许我的下一台打字机设备，还会是 Air。
+
+- [官方设备规格链接](https://support.apple.com/zh-cn/111346)
+
 ### ThinkPad L14 Gen 1 (AMD) ![Turn On:2021,2022](https://img.shields.io/badge/Turn%20On-2021,2022-brightgreen?style=flat-square)
 
 > 低成本、多核心数、高内存规格的笔记本。
