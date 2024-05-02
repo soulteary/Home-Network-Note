@@ -180,14 +180,18 @@
 - 相关文章记录
     - 《[NUC7 一台并不弱的 Mini PC](https://soulteary.com/2021/10/19/nuc7-a-mini-pc-that-is-not-weak.html)》
 
-### Dell OptiPlex 3060 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
+### MacBook Pro M2 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
 
-> 重新建设中，用于获取和处理各种 RSS 信息。
+> 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
 
-![VMware:ESXi 6.7u3](https://img.shields.io/badge/VMware-ESXi%206.7u3-brightgreen?style=flat-square&logo=VMware) ![CPU:I3-9100T](https://img.shields.io/badge/CPU-I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=I3-9100T) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![Ubuntu:24.04](https://img.shields.io/badge/Ubuntu-24.04-brightgreen?style=flat-square&logo=Ubuntu) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
+将原生的 macOS 切换为 Ubuntu 24.04，用于跑 ARM 构建测试。
 
-重新建设中，用于获取和处理各种 RSS 信息。
+- [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
+- 相关文章记录
+    - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
+    - 《[MacBook Pro 原生安装 Ubuntu 24.04 ARM 版](https://soulteary.com/2024/05/02/macbook-pro-natively-installs-arm-ubuntu-24-04.html)》
 
 ### Lenovo 9000K ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
@@ -238,16 +242,14 @@ ECC RAM 保障密集计算时，数据绝对正确，线程足够多即使对比
     - 《[廉价的全闪存雷电 NAS 折腾笔记：组网方案的选择](https://soulteary.com/2023/08/31/cheap-pure-flash-thunderbolt-nas-tossing-notes-the-choice-of-networking-solutions.html)》
     - 《[廉价的全闪存雷电 NAS 折腾笔记：NUC9 操作系统踩坑](https://soulteary.com/2023/09/12/cheap-pure-flash-thunderbolt-nas-tossing-notes-nuc9-operating-system-pitfalls.html)》
 
-### MacBook Pro M2 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
+### Dell OptiPlex 3060 ![Turn On:2022](https://img.shields.io/badge/Turn%20On-2022-brightgreen?style=flat-square)
 
-> 因为是 ARM 架构，使用比较少的设备，当然，偶尔用它来测试“模型”。
+> 重新建设中，用于获取和处理各种 RSS 信息。
 
-![MacOS:Ventura 13.2](https://img.shields.io/badge/MacOS-Ventura%2013.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
+![VMware:ESXi 6.7u3](https://img.shields.io/badge/VMware-ESXi%206.7u3-brightgreen?style=flat-square&logo=VMware) ![CPU:I3-9100T](https://img.shields.io/badge/CPU-I3--9100T(4C4T,%203.10GHz)-brightgreen?style=flat-square&logo=I3-9100T) ![RAM:16GB](https://img.shields.io/badge/RAM-16GB-brightgreen?style=flat-square) ![Disk:512GB](https://img.shields.io/badge/Disk-512GB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:802.11ac](https://img.shields.io/badge/WiFi-802.11ac-brightgreen?style=flat-square)
 
 
-- [官方设备规格链接](https://support.apple.com/kb/SP870?locale=zh_CN)
-- 相关文章记录
-    - 《[在搭载 M1 及 M2 芯片 MacBook设备上玩 Stable Diffusion 模型](https://soulteary.com/2022/12/10/play-the-stable-diffusion-model-on-macbook-devices-with-m1-and-m2-chips.html)》
+重新建设中，用于获取和处理各种 RSS 信息。
 
 
 👉 [完整说明](./handbook/items-in-use/computing.md) / **简要说明** 👇
