@@ -7,22 +7,24 @@
 
 TODO：等待更新
 
+- 2023年 MacBook Air 15inch (2023年，M2, 24GBRAM) 
+- 2023年 [重新组装的 SONY CS19](组装一台十五年前的笔记本电脑：SONY-CS19)
 - 2023年 EliteDesk 800G6, (i3 10105T, 16GBRAM)
 - 2022年 Optiplex 3060, (i3 9100T, 8GBRAM)
 - 2022年 MacBook Pro 14inch (2022年, M1 Pro, 32GBRAM)
-- 2020年 MacBook Pro 13inch (2021年，M1, 16GBRAM, Retina)
-- 2020年 MacBook Pro 16inch (2019年，i7 2.6GHz, 16GBRAM, Retina)
-- 2019年 MacBook Pro 16inch (2019年，i9 2.4GHz, 32GBRAM, Retina)
-- 2019年 MacBook Pro 13inch (2019年，i5 2.4GHz, 8GBRAM, Retina)
+- 2020年 MacBook Pro 13inch (2021年，M1, 16GBRAM)
+- 2020年 MacBook Pro 16inch (2019年，i7 2.6GHz, 16GBRAM)
+- 2019年 MacBook Pro 16inch (2019年，i9 2.4GHz, 32GBRAM)
+- 2019年 MacBook Pro 13inch (2019年，i5 2.4GHz, 8GBRAM)
 - 2018年09月 [HP EliteDesk G4 800](HP-EliteDesk-G4-800.md)，（i7 8700, 64GBRAM）
-- 2018年 MacBook Pro 15inch (2017年，i7 2.9GHz, 16GBRAM, Retina)
-- 2017年 MacBook Pro 15inch (2016年，i5 2.5GHz, 16GBRAM, Retina)
-- 2017年 MacBook 12inch (2017年，i5 1.3GHz, 8 GBRAM, Retina)
-- 2016年 MacBook Pro 13inch (2015年，i7 2.2GHz, 16GBRAM, Retina)
+- 2018年 MacBook Pro 15inch (2017年，i7 2.9GHz, 16GBRAM)
+- 2017年 MacBook Pro 15inch (2016年，i5 2.5GHz, 16GBRAM)
+- 2017年 MacBook 12inch (2017年，i5 1.3GHz, 8 GBRAM)
+- 2016年 MacBook Pro 13inch (2015年，i7 2.2GHz, 16GBRAM)
 - 2015年07月[HASEE Z7](HASEE-Z78172R2.md) 15inch
-- 2015年 MacBook Pro 15inch (2013年，i7 2.2GHz, 16GBRAM, Retina)
-- 2014年 MacBook Pro 15inch (2014年，i7 2.5GHz, 16GBRAM, Retina)
-- 2014年 MacBook Pro 15inch (2014年，i7 2.0GHz, 16GBRAM, Retina)
+- 2015年 MacBook Pro 15inch (2013年，i7 2.2GHz, 16GBRAM)
+- 2014年 MacBook Pro 15inch (2014年，i7 2.5GHz, 16GBRAM)
+- 2014年 MacBook Pro 15inch (2014年，i7 2.0GHz, 16GBRAM)
 - 2013年03月 Thinkpad X230i (2013年，i7 2GHz, 8GBRAM)
 - 2012年12月 [Lenovo Y485](Lenovo-Y485.md)
 - 2008年XX月 SONY CS-19W
