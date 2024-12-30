@@ -2,8 +2,8 @@ TLDR: 不敢想假如家里没有稳定的网络会怎样
 Full: 👉 [完整说明](https://github.com/soulteary/Home-Network-Note/blob/main/network/broadband.md) / **简要说明** 👇
 List:
   - Name: 北京联通
-    Type: 固网 1000M
-    Note: 下行 900Mbps / 上行 40Mbps
+    Type: 固网 2000M
+    Note: 下行 2000Mbps / 上行 200Mbps
   - Name: 北京联通
     Type: 4G 路由
     Note: 备份网络，保障智能家居和监控使用，及远程维护主网络设备
