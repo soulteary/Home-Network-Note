@@ -155,6 +155,7 @@
 
 - [官方设备规格链接](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_L14_Gen_1_AMD/ThinkPad_L14_Gen_1_AMD_Spec.pdf)
 - 相关文章记录
+    - 《[ThinkPad + Redis：构建亿级数据毫秒级查询的平民方案](https://soulteary.com/2024/11/21/thinkpad-with-redis-a-civilian-solution-for-building-millisecond-level-queries-on-billions-of-data.html)》
     - 《[廉价的家用工作站方案：前篇](https://soulteary.com/2021/07/02/cheap-home-workstation-solution-part-one.html)》
     - 《[AMD 4750u 及 5800u 笔记本安装 Ubuntu 20.04](https://soulteary.com/2021/07/04/install-ubuntu-20-04-on-amd-4750u-and-5800u-laptops.html)》
 - 同宗同源，但已出掉的 5800u (ThinkBook 15)
