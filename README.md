@@ -101,21 +101,25 @@
 
 > 提供运算能力的本地设备，[历史设备见文档](./handbook/devices/device-list.md)。
 
-### MacBook Air (15-inch, 2023) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
+### MacBook Air (15-inch, 2024) ![Turn On:2024](https://img.shields.io/badge/Turn%20On-2024-brightgreen?style=flat-square)
 
 > 轻便、长续航，一切刚刚好的打字机。
 
-![MacOS:Sonoma 14.2](https://img.shields.io/badge/MacOS-Sonoma%2014.2-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M2](https://img.shields.io/badge/CPU-Apple%20M2(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:24GB](https://img.shields.io/badge/RAM-24GB-brightgreen?style=flat-square) ![Disk:1TB](https://img.shields.io/badge/Disk-1TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
+![MacOS:Sonoma 14.6.1](https://img.shields.io/badge/MacOS-Sonoma%2014.6.1-brightgreen?style=flat-square&logo=apple) ![CPU:Apple M3](https://img.shields.io/badge/CPU-Apple%20M3(4P+4E)-brightgreen?style=flat-square&logo=Apple) ![RAM:24GB](https://img.shields.io/badge/RAM-24GB-brightgreen?style=flat-square) ![Disk:2TB](https://img.shields.io/badge/Disk-2TB-brightgreen?style=flat-square) ![LAN:1000M](https://img.shields.io/badge/LAN-1000M-brightgreen?style=flat-square) ![WiFi:WiFi6](https://img.shields.io/badge/WiFi-WiFi6-brightgreen?style=flat-square)
 
-2023 年，把主力打字机替换为了拥有更好续航，更少发热，运行几乎没有噪音的 M2 版本的 Air。
+说到它，我脑海中浮现的第一印象就是，打开盖子就能写字，合上塞进包里，到了新地方再拿出来继续用，从不让人操心，不用担心没电，也不会被风扇噪音困扰。
 
-随着 Apple 停止生产 Intel 芯片的设备，除了验证构建软件的场景外，再继续持有设备，并作为主力设备有一些不明智，尤其是我的 [19 款高配版本 MBP](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/MacBook%20Pro%20(16-inch%2C%202019).md)在关键时刻出现了两次过热黑屏。
+2024 年，因为上一台 M2 的 Air 出现了键盘失灵，因为当时工作非常忙，无法寄存电脑等待修理完毕。于是我将 M2 换成了更好续航，更少发热，运行几乎没有噪音的 M3 版本的 Air。
 
-性能方面，一方面我将更需要密集计算的任务移动到了其他的设备中，另外一方面，这台设备的性能比我之前的 Intel I9 处理器只高不低（单核+37%、多核+15%、FP32+83%），虽然在构建 Docker、使用一些小众软件过程中有细节的影响，但总归体验还是提升的。
+在此之前，我非常满意的设备是 [19 款高配版本 MBP](https://github.com/soulteary/Home-Network-Note/blob/main/deprecate/MacBook%20Pro%20(16-inch%2C%202019).md)，这台设备随着 Apple 停止生产 Intel 芯片的设备，系统和硬件的小问题也陆续出现，发热、卡顿、关键时刻还出现两次黑屏，作为主力设备是有一些不明智的，于是转身拥抱了 Silicon 芯片。
 
-日常不论是出差还是在外通勤、临时会议，支撑一天的电量毫无压力，加上笔记本的重量非常友好，或许我的下一台打字机设备，还会是 Air。
+性能方面，一方面我将更需要密集计算的任务移动到了其他的设备中，另外一方面，不提 M3，单说 M2 芯片，这台设备的性能比我之前的 Intel I9 处理器只高不低（单核+37%、多核+15%、FP32+83%），虽然在构建 Docker、使用一些小众软件过程中有细节的影响，但总归体验还是提升的。
 
-- [官方设备规格链接](https://support.apple.com/zh-cn/111346)
+日常不论是出差还是在外通勤、临时会议，支撑一天的电量毫无压力，加上笔记本的重量非常友好，一年前，我曾说“或许我的下一台打字机设备，还会是 Air”，这不，Air 又续上了。
+
+- [官方设备规格链接](https://support.apple.com/zh-cn/118552)
+- 相关文章记录
+    - 《[2024 年终，个人设备盘点，主力生产力设备：MacBook Air M3](https://soulteary.com/2024/12/20/at-the-end-of-2024-share-personal-device-to-friends.html#%E4%B8%BB%E5%8A%9B%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AE%BE%E5%A4%87macbook-air-m3)》
 
 ### ThinkBook 14 2023 (Intel) ![Turn On:2023](https://img.shields.io/badge/Turn%20On-2023-brightgreen?style=flat-square)
 
